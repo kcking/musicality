@@ -74,3 +74,4 @@ crashlytics-build.properties
 /[Ii]nstallers/*.exe
 
 quest_BackUpThisFolder_ButDontShipItWithYourGame
+Assets/FoundryVR/External/WebView/.DS_Store
