@@ -72,3 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 /[Ii]nstallers/*.exe
+
+quest_BackUpThisFolder_ButDontShipItWithYourGame

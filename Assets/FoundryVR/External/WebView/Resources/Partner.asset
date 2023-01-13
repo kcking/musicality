@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b550d55edc18d8d40b5f5cf0e9c20e88, type: 3}
+  m_Script: {fileID: 11500000, guid: d5ac62abdbdb2584382826c4ba43f0f4, type: 3}
   m_Name: Partner
   m_EditorClassIdentifier: 
-  Subdomain: demo
+  Subdomain: 
