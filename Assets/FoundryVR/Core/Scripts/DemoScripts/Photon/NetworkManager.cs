@@ -18,9 +18,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     private void OnGUI()
     {
-        if (desktopOveride) 
+        if (desktopOveride)
         {
-            if (GUILayout.Button("Connect")) 
+            if (GUILayout.Button("Connect"))
             {
                 Connect();
             }
@@ -43,19 +43,20 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log("Connected to master!");
     }
 
-    public void Connect() 
+    public void Connect()
     {
-        PhotonNetwork.JoinRandomRoom();
+        PhotonNetwork.JoinOrCreateRoom("password", new RoomOptions(), TypedLobby.Default);
+        // PhotonNetwork.JoinRandomRoom();
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
         Debug.Log($"Failed to join room : {returnCode} , {message}");
-        PhotonNetwork.CreateRoom(Random.Range(0, 100000000).ToString(), new RoomOptions { MaxPlayers = 6});
+        PhotonNetwork.CreateRoom(Random.Range(0, 100000000).ToString(), new RoomOptions { MaxPlayers = 6 });
     }
 
     public override void OnJoinedRoom()
-    {      
+    {
         Debug.Log("Joined Room");
         Debug.Log(PhotonNetwork.CurrentRoom.Name);
 
