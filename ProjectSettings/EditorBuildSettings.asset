@@ -6,20 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/FoundryVR/Core/Scenes/Samples/Offline.unity
-    guid: a50ce6b92b274ce409f15614db612193
-  - enabled: 0
-    path: Assets/FoundryVR/Core/Scenes/Samples/Online.unity
-    guid: c3a4e15f45d41194f888d6d422ae0b1b
-  - enabled: 0
     path: Assets/Musicality/Scenes/LobbyScene.unity
     guid: daee55954c9c4bf418be975b84aab6c5
   - enabled: 0
     path: Assets/Musicality/Scenes/MainScene.unity
     guid: ef070b28ec7ec4b368184a1c11bdcb3e
   - enabled: 1
-    path: Assets/Musicality/Scenes/Marshall_TestScene.unity
-    guid: dd95eca2a0bde40608f2bb0d1719a1ec
+    path: Assets/Musicality/Scenes/MatthewTestScene.unity
+    guid: 18fccb956e9d34846b2fd414240fccd2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d1e616a9349926945a2b409e579d0eab, type: 2}
     com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: 6162442ab11642245ad6e1d3dead3784, type: 2}
