@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Foundry
 {
+    [RequireComponent(typeof(AudioSource))]
     public class SoundObject : MonoBehaviour, Photon.Pun.IPunObservable
     {
         double? triggerTime;
