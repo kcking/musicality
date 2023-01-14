@@ -43,7 +43,7 @@ namespace Foundry
                 {
                     //  play it!
                     playedTime = triggerTime;
-                    GetComponent<AudioSource>().Play();
+                    AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
                 }
             }
 
