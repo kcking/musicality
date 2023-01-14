@@ -25,7 +25,7 @@ namespace Foundry
         // Start is called before the first frame update
         void Start()
         {
-            InvokeRepeating("triggerLoop", 0, 2);
+            // InvokeRepeating("triggerLoop", 0, 2);
         }
 
         void triggerLoop()
@@ -43,7 +43,8 @@ namespace Foundry
                 {
                     //  play it!
                     playedTime = triggerTime;
-                    AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
+                    // AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
+                    AudioManager.instance.impactAudio.PlayRandomImpactClip(GetComponent<AudioSource>());
                 }
             }
 
