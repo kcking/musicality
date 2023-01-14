@@ -13,5 +13,6 @@ EditorBuildSettings:
     guid: c3a4e15f45d41194f888d6d422ae0b1b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d1e616a9349926945a2b409e579d0eab, type: 2}
+    com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: 6162442ab11642245ad6e1d3dead3784, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2d7926164cd09734381e6f69fc480b2d, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9df9b1a718a57ff49ab25a20486d01cd, type: 2}
