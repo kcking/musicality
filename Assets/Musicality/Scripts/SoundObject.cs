@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Foundry
 {
+    [RequireComponent(typeof(AudioSource))]
     public class SoundObject : MonoBehaviour, Photon.Pun.IPunObservable
     {
         double? triggerTime;
@@ -42,7 +43,7 @@ namespace Foundry
                 {
                     //  play it!
                     playedTime = triggerTime;
-                    GetComponent<AudioSource>().Play();
+                    AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
                 }
             }
 
