@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/FoundryVR/Core/Scenes/Samples/Offline.unity
     guid: a50ce6b92b274ce409f15614db612193
-  - enabled: 1
+  - enabled: 0
     path: Assets/FoundryVR/Core/Scenes/Samples/Online.unity
     guid: c3a4e15f45d41194f888d6d422ae0b1b
   - enabled: 1
