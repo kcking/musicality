@@ -9,11 +9,13 @@ namespace Foundry
     public class SoundObject : MonoBehaviour, Photon.Pun.IPunObservable
     {
         double? triggerTime;
+        double? lastSentTriggerTime;
         double? playedTime;
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
-            if (stream.IsWriting)
+            if (stream.IsWriting && triggerTime != lastSentTriggerTime)
             {
+                lastSentTriggerTime = triggerTime;
                 stream.SendNext(triggerTime);
             }
             else if (stream.IsReading)
