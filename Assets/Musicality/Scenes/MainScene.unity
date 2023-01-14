@@ -1105,6 +1105,28 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 68dcdf8da88f841fb9237b42106b08c4, type: 3}
   - {fileID: 8300000, guid: ade56494016f04860a192b3959492480, type: 3}
   - {fileID: 8300000, guid: 1c68b82394e7f460eb9f4bd83122151a, type: 3}
+  softImpactClips:
+  - {fileID: 8300000, guid: 5db9e2ca9f90f4bfdafb33638d6d58f2, type: 3}
+  - {fileID: 8300000, guid: b1702e412c4c64e6088b02a9a8c59b38, type: 3}
+  - {fileID: 8300000, guid: 07c308318d569415ba3f656e4bc8c6d0, type: 3}
+  - {fileID: 8300000, guid: 30bf195d25bfb4ca0a9e957bb21ce7ee, type: 3}
+  - {fileID: 8300000, guid: b07b647dde6144ac5bb96b3ae43cbfd6, type: 3}
+  - {fileID: 8300000, guid: 6e14726d794d74f98bbd8036e790a182, type: 3}
+  - {fileID: 8300000, guid: bcc19eb2172eb41fc9fffca0a19a6be7, type: 3}
+  - {fileID: 8300000, guid: 0dd788bec29674dc790612100cc7b8a7, type: 3}
+  - {fileID: 8300000, guid: a9d0e657733bf495abbf890c4f75eb4b, type: 3}
+  - {fileID: 8300000, guid: 7262d5b3fd29c4a839491b90f7024e4f, type: 3}
+  - {fileID: 8300000, guid: fb349abc5e27a4bbf9b88a0f8743b55b, type: 3}
+  - {fileID: 8300000, guid: 1c0b3576cb6fc4c0e8289ebc6a58deea, type: 3}
+  - {fileID: 8300000, guid: ce4e0afe79aaf4e8b90bcde3bdd0644b, type: 3}
+  - {fileID: 8300000, guid: 728be07c878d44f38abdac49b7c3d3c4, type: 3}
+  - {fileID: 8300000, guid: 45795d2eaea9c4a949d9ad248b9054a7, type: 3}
+  - {fileID: 8300000, guid: 30bf195d25bfb4ca0a9e957bb21ce7ee, type: 3}
+  - {fileID: 8300000, guid: 0fc622093096a4f7aa2228452b37cb9d, type: 3}
+  - {fileID: 8300000, guid: 5b90cdeafc232422f928e5199d65f520, type: 3}
+  - {fileID: 8300000, guid: f1b2bf231416c40d3be4c2624a824dbe, type: 3}
+  - {fileID: 8300000, guid: 00feff29c306a4c438e6f250e37ed3b3, type: 3}
+  - {fileID: 8300000, guid: 7451e0278b6c34c22b25a2f893fdf345, type: 3}
 --- !u!1 &1242392507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,7 +1772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc861e3c34034a21ad01197262af475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactAudio: {fileID: 0}
+  impactAudio: {fileID: 1117541171}
 --- !u!4 &1913559682
 Transform:
   m_ObjectHideFlags: 0
