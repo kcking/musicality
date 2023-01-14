@@ -1344,6 +1344,7 @@ GameObject:
   - component: {fileID: 1813396935}
   - component: {fileID: 1813396934}
   - component: {fileID: 1813396943}
+  - component: {fileID: 1813396944}
   m_Layer: 10
   m_Name: SoundHandGun
   m_TagString: Untagged
@@ -1541,10 +1542,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1813396944}
+        m_TargetAssemblyTypeName: Foundry.GrabAudioEffects, Assembly-CSharp
+        m_MethodName: Grabbed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1813396944}
+        m_TargetAssemblyTypeName: Foundry.GrabAudioEffects, Assembly-CSharp
+        m_MethodName: Released
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls:
@@ -1666,7 +1691,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1813396939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,6 +1791,108 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0097ffa320048458eb8e8b4263cafa99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1813396944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813396931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2286e28f5364e485085ee54070bf8488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentNoteValue: 
+  isGrabbed: 0
+  positionNotes:
+  - A2
+  - B2
+  - Db3
+  - E3
+  - Gb3
+--- !u!1001 &1864879399
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 270480660}
+    m_Modifications:
+    - target: {fileID: 2300258269507693032, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: sceneViewId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629456449877619277, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701841069326404865, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: sceneViewId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849232, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: sceneViewId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849259, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_Name
+      value: EmojiCannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645602697686852778, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+      propertyPath: sceneViewId
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+--- !u!4 &1864879400 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6357996271957849263, guid: 1c01871b0dc004c419ae2dce77c9ca8b, type: 3}
+  m_PrefabInstance: {fileID: 1864879399}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1913559680
 GameObject:
   m_ObjectHideFlags: 0
