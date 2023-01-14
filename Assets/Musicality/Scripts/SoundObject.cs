@@ -39,6 +39,9 @@ namespace Foundry
         // Update is called once per frame
         void Update()
         {
+            //  Color change code (random color)
+            // GetComponent<MeshRenderer>().material.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
+
             if (triggerTime != null)
             {
                 if (playedTime != triggerTime)
