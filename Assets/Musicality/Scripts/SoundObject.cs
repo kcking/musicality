@@ -9,11 +9,13 @@ namespace Foundry
     public class SoundObject : MonoBehaviour, Photon.Pun.IPunObservable
     {
         double? triggerTime;
+        double? lastSentTriggerTime;
         double? playedTime;
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
-            if (stream.IsWriting)
+            if (stream.IsWriting && triggerTime != lastSentTriggerTime)
             {
+                lastSentTriggerTime = triggerTime;
                 stream.SendNext(triggerTime);
             }
             else if (stream.IsReading)
@@ -25,7 +27,7 @@ namespace Foundry
         // Start is called before the first frame update
         void Start()
         {
-            InvokeRepeating("triggerLoop", 0, 2);
+            // InvokeRepeating("triggerLoop", 0, 2);
         }
 
         void triggerLoop()
@@ -43,7 +45,8 @@ namespace Foundry
                 {
                     //  play it!
                     playedTime = triggerTime;
-                    AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
+                    // AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
+                    AudioManager.instance.impactAudio.PlayRandomImpactClip(GetComponent<AudioSource>());
                 }
             }
 
