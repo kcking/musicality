@@ -15,7 +15,8 @@ namespace Foundry
 
         public void PlaySoundNote()
         {
-            AudioManager.instance.impactAudio.PlayRandomImpactClip(audioSource);
+            GetComponent<SoundObject>().trigger();
+            // AudioManager.instance.impactAudio.PlayRandomImpactClip(audioSource);
         }
     }
 }
