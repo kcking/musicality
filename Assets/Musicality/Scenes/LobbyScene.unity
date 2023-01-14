@@ -1004,6 +1004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12bda9d8d4c6c44c18c4e238ac56f571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentAvailableNotes: []
   startEvents:
     m_PersistentCalls:
       m_Calls:
@@ -1117,7 +1118,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 08ae8f9cdc2b6c140b7c5fc272fd5f11, type: 2}
+  - {fileID: 2100000, guid: 479b55591fb1e448394783a2a6534984, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1583,7 +1584,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh65022
+  m_Name: pb_Mesh48482
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
