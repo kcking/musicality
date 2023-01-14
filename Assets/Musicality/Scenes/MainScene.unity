@@ -481,8 +481,8 @@ Transform:
   - {fileID: 5807688999330427205}
   - {fileID: 1981543503}
   - {fileID: 747708401}
-  - {fileID: 2123858624}
   - {fileID: 1813396932}
+  - {fileID: 2123858624}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1650,7 +1650,7 @@ Transform:
   - {fileID: 1938411776}
   - {fileID: 870527782}
   m_Father: {fileID: 270480660}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1813396933
 MonoBehaviour:
@@ -1721,7 +1721,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
