@@ -29,7 +29,11 @@ public class StickyNote : MonoBehaviourPunCallbacks, IPunObservable
         }
         else
         {
-            textOutput.text = (string)stream.ReceiveNext();
+            string recvText = (string)stream.ReceiveNext();
+            if (recvText != null)
+            {
+                textOutput.text = recvText;
+            }
         }
     }
 }
