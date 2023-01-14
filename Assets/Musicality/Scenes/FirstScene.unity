@@ -3295,7 +3295,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5957107383594210515, guid: 6758bcf68b6fa684ea48f28c4ec95bbc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957107383594210515, guid: 6758bcf68b6fa684ea48f28c4ec95bbc, type: 3}
       propertyPath: usePrimaryRecorder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957107383594210517, guid: 6758bcf68b6fa684ea48f28c4ec95bbc, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
