@@ -13,9 +13,9 @@ namespace Foundry
         public Weapon weapon;
         public Transform barrelPosition;
 
-        private bool shooting;
+        public bool shooting;
 
-        private float timeSinceLastFire;
+        public float timeSinceLastFire;
 
         private void Start()
         {
