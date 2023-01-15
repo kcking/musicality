@@ -14,11 +14,8 @@ namespace Foundry
          
         public string[] notes = { "Eb2", "E2", "F2", "Gb2", "G2", "Ab2", "A2", "Bb2", "B2", "C3", "Db3", "D3", "Eb3", "E3", "F3", "Gb3", "G3", "Ab3", "A3", "Bb3", "B3"};
 
-        void Awake()
-        {
-
-        }
-
+        public float maxImpact = 10f; // Maximum impact force
+        
         void Start()
         {   
             LoadClipDictionarys();
@@ -27,6 +24,26 @@ namespace Foundry
         public void PlayRandomImpactClip(AudioSource objectSource)
         {
             AudioClip clip;
+
+            string clipName = notes[Random.Range(0, notes.Length)];
+            
+            // Try to get the clip from the dictionary
+            if (hardImpactsDictionary.TryGetValue(clipName, out clip))
+            {
+                objectSource.PlayOneShot(clip);
+            }
+            else
+            {
+                Debug.LogError("Clip not found: " + clipName);
+            }
+        }
+
+        public void PlayRandomImpactClip(AudioSource objectSource, Collision collision)
+        {
+            AudioClip clip;
+
+            float impactForce = collision.impulse.magnitude;
+            float volume = impactForce / maxImpact;
 
             string clipName = notes[Random.Range(0, notes.Length)];
             

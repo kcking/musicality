@@ -1,5 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-6930544999827161885
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: e3328abb5438e4447b1ac949f953217c
+  m_EffectName: SFX Reverb
+  m_MixLevel: dd12ac1a6651c467ab58151ef7a76401
+  m_Parameters:
+  - m_ParameterName: Dry Level
+    m_GUID: 22024e1e2273b47a9aae3242cf105fce
+  - m_ParameterName: Room
+    m_GUID: dfd761ad8b8cd4f1b8da27b32cb90a98
+  - m_ParameterName: Room HF
+    m_GUID: 26471155375d24408aa99233812e659c
+  - m_ParameterName: Decay Time
+    m_GUID: 5b2753c95bdcb46e2a9747c9b5e12500
+  - m_ParameterName: Decay HF Ratio
+    m_GUID: d9707d6482cea48af9d5f3373e179f0b
+  - m_ParameterName: Reflections
+    m_GUID: c80640f94c54a4f77931f8903229448f
+  - m_ParameterName: Reflect Delay
+    m_GUID: 70d09955f5c4b4a7e8c5c6d061e87c2f
+  - m_ParameterName: Reverb
+    m_GUID: 0d6ad2db07a864068beadbda5131b159
+  - m_ParameterName: Reverb Delay
+    m_GUID: b7e9ddf725e584dc6b431aa4b2f294f7
+  - m_ParameterName: Diffusion
+    m_GUID: 8b5156004add84ce58533514d290c1ae
+  - m_ParameterName: Density
+    m_GUID: d730db241562d4ae9b7575e9d130e9fb
+  - m_ParameterName: HF Reference
+    m_GUID: cd98123df93a44e779332084b1dcc6b2
+  - m_ParameterName: Room LF
+    m_GUID: 44198a3fe110d4ce0907171611db3860
+  - m_ParameterName: LF Reference
+    m_GUID: ca3fe8cd7bea34aa7b1b1d4c1967c9ef
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -37,6 +79,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 24400004}
+  - {fileID: -6930544999827161885}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -64,5 +107,9 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: bc9f287d8e2274179979b8948efc4e22
-  m_FloatValues: {}
+  m_FloatValues:
+    5b2753c95bdcb46e2a9747c9b5e12500: 2.47
+    c80640f94c54a4f77931f8903229448f: -9044
+    0d6ad2db07a864068beadbda5131b159: -3921
+    22024e1e2273b47a9aae3242cf105fce: 0
   m_TransitionOverrides: {}
