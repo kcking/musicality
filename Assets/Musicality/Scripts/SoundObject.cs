@@ -21,6 +21,8 @@ namespace Foundry
         public float timeSpawned;
 
         private AudioSource audioSource;
+
+        private int notePlayedIndex;
             
         double? triggerTime;
         double? lastSentTriggerTime;
@@ -82,7 +84,10 @@ namespace Foundry
                         //  play it!
                         playedTime = triggerTime;
                         // AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
-                        AudioManager.instance.impactAudio.PlayRandomImpactClip(audioSource);
+                        //AudioManager.instance.impactAudio.PlayRandomImpactClip(audioSource);
+                        notePlayedIndex = (int)UnityEngine.Random.Range(0, 7);
+
+                        AudioManager.instance.impactAudio.PlayImpactClip(NoteLayouts.AMajorScale[notePlayedIndex], audioSource);
                     }
                 }
             }
