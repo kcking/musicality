@@ -31,15 +31,16 @@ namespace Foundry
         }
 
         void OnCollisionEnter(Collision collision)
-
         {
             Debug.Log("CollisionEnter");
             if (isGrabbed)
             {
                 UpdateCurrentNote();
-                AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>());
+                AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>(), collision);
             }
         }
+
+        
 
         public void Grabbed()
         {
