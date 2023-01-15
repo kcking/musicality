@@ -17,8 +17,8 @@ namespace Foundry
     // Start is called before the first frame update
         void SpawnObject(){
 
-            //PhotonNetwork.Instantiate(spawnObject.name, spawnLoc, Quaternion.identity);
-            Instantiate(spawnObject, spawnLoc, Quaternion.identity);
+            PhotonNetwork.Instantiate(spawnObject.name, spawnLoc, Quaternion.identity);
+            //Instantiate(spawnObject, spawnLoc, Quaternion.identity);
             Rigidbody rb = spawnObject.GetComponent<Rigidbody>();
             rb.AddForce(Vector3.up * spawnVelocity, ForceMode.Impulse);
         }
