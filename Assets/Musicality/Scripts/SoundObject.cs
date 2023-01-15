@@ -23,11 +23,12 @@ namespace Foundry
 
         void Start()
         {
-            FindObjectOfType<GameManager>();
+            gameManager = FindObjectOfType<GameManager>();
             audioSource = GetComponent<AudioSource>();
-            noteValue = gameManager.currentAvailableNotes[Random.Range(0, gameManager.currentAvailableNotes.Count)];
+            if(GameManager.currentAvailableNotes != null)
+                noteValue = GameManager.currentAvailableNotes[Random.Range(0, GameManager.currentAvailableNotes.Count)];
             // If nothing is assigned to current available notes then 
-            if(gameManager.currentAvailableNotes == null)
+            if(GameManager.currentAvailableNotes == null)
                 noteValue = GameManager.allAvailableNotes[Random.Range(0, GameManager.allAvailableNotes.Length)];
         }
 
