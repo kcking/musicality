@@ -24,7 +24,6 @@ namespace Foundry
             }
         }
 
-        // Start is called before the first frame update
         void Start()
         {
             // InvokeRepeating("triggerLoop", 0, 2);
@@ -41,7 +40,6 @@ namespace Foundry
         {
             //  Color change code (random color)
             // GetComponent<MeshRenderer>().material.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
-
             if (triggerTime != null)
             {
                 if (playedTime != triggerTime)
@@ -54,6 +52,12 @@ namespace Foundry
             }
 
         }
+
+        public void OnCollisionEnter()
+        {
+            
+        }
+        
 
         public void trigger()
         {
