@@ -10,7 +10,7 @@ namespace Foundry
     {
         public GameObject spawnObject;
         public float spawnRate;
-        private Vector3 spawnLoc = new Vector3(0, 1.8f, 1.5f);
+        private Vector3 spawnLoc = new Vector3(-3.36f, 1.8f, 0);
         public float spawnVelocity = 10f;
 
 
