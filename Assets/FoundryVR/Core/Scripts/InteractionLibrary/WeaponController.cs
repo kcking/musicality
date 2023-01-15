@@ -26,7 +26,7 @@ namespace Foundry
         {
             if (weapon.WeaponType == WeaponType.semiAuto)
             {
-                GameObject bullet = PhotonNetwork.Instantiate(weapon.bullet.name, barrelPosition.position,
+                GameObject bullet = Instantiate(weapon.bullet, barrelPosition.position,
                     barrelPosition.rotation);
                 Rigidbody bulletRB = bullet.GetComponent<Rigidbody>();
 
