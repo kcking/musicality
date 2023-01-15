@@ -8,6 +8,6 @@ namespace Foundry
     public static class NoteLayouts
     {
         public static string[] APentatonic = {"A2", "B2", "Db3", "E3", "Gb3", "A3"};
-        
+        public static string[] AMajorScale = {"B3", "B2", "Db3", "D3", "E3", "Gb3", "Ab3", "A3"};
     }
 }
