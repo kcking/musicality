@@ -23,6 +23,8 @@ namespace Foundry
             if (stream.IsWriting)
             {
                 stream.SendNext(RB.position);
+                stream.SendNext(RB.velocity);
+                stream.SendNext(RB.angularVelocity);
                 stream.SendNext(RB.rotation);
                 stream.SendNext(RB.isKinematic);
                 stream.SendNext(RB.useGravity);
@@ -30,6 +32,8 @@ namespace Foundry
             else
             {
                 RB.position = (Vector3)stream.ReceiveNext();
+                RB.velocity = (Vector3)stream.ReceiveNext();
+                RB.angularVelocity = (Vector3)stream.ReceiveNext();
                 RB.rotation = (Quaternion)stream.ReceiveNext();
                 RB.isKinematic = (bool)stream.ReceiveNext();
                 RB.useGravity = (bool)stream.ReceiveNext();
