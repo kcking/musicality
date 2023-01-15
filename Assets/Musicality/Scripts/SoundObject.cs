@@ -79,6 +79,10 @@ namespace Foundry
 
         public void OnCollisionEnter(Collision collision)
         {
+            if (collision.gameObject.CompareTag("Shooting Cube"))
+            {
+                return;
+            }
             collisionRef = collision;
             isCollided = true;
             trigger();
