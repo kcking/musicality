@@ -82,7 +82,7 @@ namespace Foundry
             float impactForce = collision.impulse.magnitude;
             float volume = impactForce / maxImpact;
 
-            objectSource.volume = Mathf.Clamp(volume, 0f, 1f);
+            objectSource.volume = Mathf.Clamp(volume, .2f, 1f);
             // Try to get the clip from the dictionary
             if (hardImpactsDictionary.TryGetValue(clipName, out clip))
             {
