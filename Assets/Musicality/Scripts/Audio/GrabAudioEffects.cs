@@ -13,6 +13,7 @@ namespace Foundry
         public Color? currentColor = null;
 
         public bool isGrabbed;
+        public bool isReversing;
 
         // What note values will be held by the differnet positions
         public string[] positionNotes = NoteLayouts.APentatonic;
@@ -32,6 +33,14 @@ namespace Foundry
 
         void Update()
         {
+            if(isReversing)
+            {
+                // if(GetComponent<Rigidbody>().velocity.magnitude < 0.005f)
+                // {
+                //     GetComponent<AudioSource>().Stop();
+                //     isReversing = false;
+                // }
+            }
             // Debug.Log("UpdateKevin");
             if (isGrabbed)
             {
@@ -55,20 +64,13 @@ namespace Foundry
                     UpdateCurrentNote();
                     AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>(), collision);
                 }
-                
             }
         }
 
-        
-
         public void Grabbed()
         {
-
-            // ev.interactableObject.transform.gameObject.GetComponent<Rigidbody>().detectCollisions = false;
-            // ev.interactableObject.transform.gameObject.SetActive(false);
-            // ev.interactorObject.transform.gameObject.GetComponent<Collider>().isTrigger = true;
-            // ev.interactorObject.transform.gameObject.GetComponent<Rigidbody>().is = false;
-
+            GetComponent<AudioSource>().PlayOneShot(AudioManager.instance.reverseGrab.reverseGrabClip);
+            isReversing = true;
             Debug.Log("Grabbed");
             isGrabbed = true;
         }
