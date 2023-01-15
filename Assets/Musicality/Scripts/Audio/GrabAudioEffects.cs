@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace Foundry
 {
@@ -42,12 +43,20 @@ namespace Foundry
 
         public void Grabbed()
         {
+
+            // ev.interactableObject.transform.gameObject.GetComponent<Rigidbody>().detectCollisions = false;
+            // ev.interactableObject.transform.gameObject.SetActive(false);
+            // ev.interactorObject.transform.gameObject.GetComponent<Collider>().isTrigger = true;
+            // ev.interactorObject.transform.gameObject.GetComponent<Rigidbody>().is = false;
+
             Debug.Log("Grabbed");
             isGrabbed = true;
         }
 
         public void Released()
         {
+            // ev.interactableObject.transform.gameObject.GetComponent<Rigidbody>().detectCollisions = true;
+            // ev.interactorObject.transform.gameObject.GetComponent<Collider>().isTrigger = false;
             Debug.Log("Released");
             isGrabbed = false;
         }
