@@ -33,14 +33,6 @@ namespace Foundry
 
         void Update()
         {
-            if(isReversing)
-            {
-                // if(GetComponent<Rigidbody>().velocity.magnitude < 0.005f)
-                // {
-                //     GetComponent<AudioSource>().Stop();
-                //     isReversing = false;
-                // }
-            }
             // Debug.Log("UpdateKevin");
             if (isGrabbed)
             {
@@ -69,8 +61,6 @@ namespace Foundry
 
         public void Grabbed()
         {
-            GetComponent<AudioSource>().PlayOneShot(AudioManager.instance.reverseGrab.reverseGrabClip);
-            isReversing = true;
             Debug.Log("Grabbed");
             isGrabbed = true;
         }

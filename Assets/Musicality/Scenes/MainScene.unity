@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09643556, g: 0.18310577, b: 0.3598636, a: 1}
+  m_IndirectSpecularColor: {r: 0.096252725, g: 0.18286106, b: 0.35913065, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1050,6 +1050,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6171218075538847355, guid: c40eb98cce4b4844cbcee7b9d7992244, type: 3}
+      propertyPath: m_AttachEaseInTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171218075538847355, guid: c40eb98cce4b4844cbcee7b9d7992244, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1303,6 +1307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1110859292}
+  - component: {fileID: 1110859294}
   - component: {fileID: 1110859293}
   m_Layer: 0
   m_Name: ReverseGrab
@@ -1340,6 +1345,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reverseGrabClip: {fileID: 8300000, guid: bcb37dbf19b8442dfa5574173b3ccd0b, type: 3}
   isPlaying: 0
+--- !u!82 &1110859294
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110859291}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bcb37dbf19b8442dfa5574173b3ccd0b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1117541169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactAudio: {fileID: 1117541171}
-  reverseGrab: {fileID: 0}
+  reverseGrab: {fileID: 1110859293}
 --- !u!4 &1913559682
 Transform:
   m_ObjectHideFlags: 0

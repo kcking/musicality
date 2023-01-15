@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6171218075538847356}
   - component: {fileID: 6171218075538847359}
   - component: {fileID: 6171218075538847353}
+  - component: {fileID: 8996689646983879742}
   - component: {fileID: 6171218075538847352}
   - component: {fileID: 6171218075538847355}
   - component: {fileID: 6171218075538847354}
@@ -19,7 +20,6 @@ GameObject:
   - component: {fileID: 6171218075538847348}
   - component: {fileID: 6171218075538847357}
   - component: {fileID: 6171218075538847330}
-  - component: {fileID: 8996689646983879742}
   m_Layer: 10
   m_Name: SoundHandGun
   m_TagString: Untagged
@@ -118,6 +118,19 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!135 &8996689646983879742
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171218075538847345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000239
+  m_Center: {x: 6.776263e-22, y: -0.00000011920929, z: 0.00000017881396}
 --- !u!54 &6171218075538847352
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -474,25 +487,13 @@ MonoBehaviour:
   soundObject: {fileID: 0}
   currentNoteValue: 
   isGrabbed: 0
+  isReversing: 0
   positionNotes:
   - A2
   - B2
   - Db3
   - E3
   - Gb3
---- !u!135 &8996689646983879742
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6171218075538847345}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000239
-  m_Center: {x: 6.776263e-22, y: -0.00000011920929, z: 0.00000017881396}
 --- !u!1 &6171218075814828877
 GameObject:
   m_ObjectHideFlags: 0
