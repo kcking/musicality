@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh62458
+  m_Name: pb_Mesh72484
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -404,6 +404,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1864879400}
   - {fileID: 1813396932}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -1367,7 +1368,7 @@ Transform:
   - {fileID: 1938411776}
   - {fileID: 870527782}
   m_Father: {fileID: 270480660}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!82 &1813396934
 AudioSource:
@@ -1378,7 +1379,7 @@ AudioSource:
   m_GameObject: {fileID: 1813396931}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ef41fc6e0303a47619f072c9546a1113, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1937,6 +1938,7 @@ Transform:
   m_Children:
   - {fileID: 1117541170}
   - {fileID: 1170320661}
+  - {fileID: 1957392152}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4793,6 +4795,58 @@ Transform:
   m_Father: {fileID: 1813396932}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -60, y: 0, z: 0}
+--- !u!1 &1957392151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1957392152}
+  - component: {fileID: 1957392153}
+  m_Layer: 0
+  m_Name: DroneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1957392152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957392151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913559682}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1957392153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957392151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6307a1e98d93e43139d62f91ccbeadce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droneClips:
+  - {fileID: 8300000, guid: b9c0d88c6d415447f855629dfa3acc16, type: 3}
+  - {fileID: 8300000, guid: 177b92968e1d641449b472e6a5feba33, type: 3}
+  - {fileID: 8300000, guid: 5abc59ba0d6e94f8081ac48d258029f8, type: 3}
+  droneRoots:
+  - A
+  - E
+  - Gb
 --- !u!1 &1983403588
 GameObject:
   m_ObjectHideFlags: 0

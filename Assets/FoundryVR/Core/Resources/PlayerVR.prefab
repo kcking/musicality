@@ -2409,6 +2409,7 @@ GameObject:
   - component: {fileID: 2101046762834117018}
   - component: {fileID: 2101046762834117030}
   - component: {fileID: 2240212518897297153}
+  - component: {fileID: 3315837943427457922}
   - component: {fileID: 7529204983352988260}
   - component: {fileID: 3611572285161883271}
   - component: {fileID: 2513078475994628670}
@@ -2488,6 +2489,20 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 0
+--- !u!64 &3315837943427457922
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101046762834117021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!54 &7529204983352988260
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2913,6 +2928,7 @@ GameObject:
   - component: {fileID: 2101046763456989270}
   - component: {fileID: 2101046763456989266}
   - component: {fileID: 1612370085886912859}
+  - component: {fileID: 4037184434787926726}
   - component: {fileID: 8715513493750586659}
   - component: {fileID: 4496660344266360638}
   - component: {fileID: 106729773571505990}
@@ -2991,6 +3007,20 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 0
+--- !u!64 &4037184434787926726
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101046763456989257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!54 &8715513493750586659
 Rigidbody:
   m_ObjectHideFlags: 0
