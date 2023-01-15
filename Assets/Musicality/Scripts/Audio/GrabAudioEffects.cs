@@ -100,7 +100,7 @@ namespace Foundry
                 Debug.Log("MagnitudeOfCollision is " + collision.relativeVelocity.magnitude);
                 GameObject other = collision.gameObject;
                 if (string.Compare(other.GetComponent<SoundObject>().id, this.GetComponent<SoundObject>().id) < 0)
-                {   
+                {
                     UpdateCurrentNote();
                     collisionRef = collision;
                     isCollided = true;
@@ -130,10 +130,7 @@ namespace Foundry
             float yPos = gameObject.transform.position.y - 0.2f; // translate down a little
             int section = (int)(yPos / sectionSize);
 
-            if (yPos > 2.0)
-                section = positionNotes.Length - 1;
-            if (yPos < 0.0)
-                section = 0;
+            section = Mathf.Clamp(section, 0, (positionNotes.Length - 1));
 
             if (section < colors.Length)
             {
