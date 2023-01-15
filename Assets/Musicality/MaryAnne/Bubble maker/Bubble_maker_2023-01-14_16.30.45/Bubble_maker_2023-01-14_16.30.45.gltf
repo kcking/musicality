@@ -1,0 +1,958 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 486,
+      "type": "VEC3",
+      "max": [
+        0.50002384185791016,
+        0.50002372264862061,
+        0.50002402067184448
+      ],
+      "min": [
+        -0.50002384185791016,
+        -0.50002396106719971,
+        -0.50002366304397583
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 486,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 486,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.70710688829422,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.70710694789886475,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 486,
+      "type": "VEC2",
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 2304,
+      "type": "SCALAR",
+      "max": [
+        485.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 520,
+      "type": "VEC3",
+      "max": [
+        0.5,
+        0.50000011920928955,
+        0.5000002384185791
+      ],
+      "min": [
+        -0.5,
+        -0.50000005960464478,
+        -0.49999991059303284
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 520,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 520,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 520,
+      "type": "VEC2",
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 1536,
+      "type": "SCALAR",
+      "max": [
+        519.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "Bubble_maker_2023-01-14_16.30.45.bin",
+      "byteLength": 55968
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 5832
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5832,
+      "byteLength": 5832
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11664,
+      "byteLength": 7776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19440,
+      "byteLength": 3888
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 23328,
+      "byteLength": 4608
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 27936,
+      "byteLength": 6240
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 34176,
+      "byteLength": 6240
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 40416,
+      "byteLength": 8320
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 48736,
+      "byteLength": 4160
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 52896,
+      "byteLength": 3072
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9529411,
+          0.364705861,
+          0.372549,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "name": "Spherabox 1 #F35D5FFF"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9490196,
+          0.6901961,
+          0.188235253,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "name": "Spherabox 2 #F2B030FF"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.921568632,
+          0.921568632,
+          0.243137211,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "name": "Spherabox 3 #EBEB3EFF"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0
+      },
+      "name": "PBROpaqueBuiltIn"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.635294139,
+          0.203921527,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "name": "Spherabox 5 #A234FFFF"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.313725471,
+          0.9019608,
+          0.313725471,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "name": "Spherabox 6 #50E650FF"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.325490147,
+          0.325490147,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "name": "Spherabox 7 #5353FFFF"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.364705861,
+          0.807843149,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "name": "Spherabox 8 #5DCEFFFF"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "Spherabox 1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 1
+        }
+      ],
+      "name": "Spherabox 2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 2
+        }
+      ],
+      "name": "Spherabox 3"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 3
+        }
+      ],
+      "name": "Tube 4"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 4
+        }
+      ],
+      "name": "Spherabox 5"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 5
+        }
+      ],
+      "name": "Spherabox 6"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 6
+        }
+      ],
+      "name": "Spherabox 7"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 7
+        }
+      ],
+      "name": "Spherabox 8"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        3
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "name": "Space Root"
+    },
+    {
+      "children": [
+        2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "name": "Viewpoints"
+    },
+    {
+      "rotation": [
+        0.17753163,
+        -0.30109638,
+        0.0571594276,
+        0.935177147
+      ],
+      "scale": [
+        0.9999708,
+        0.999996245,
+        0.9999359
+      ],
+      "translation": [
+        -1.96430182,
+        1.65840089,
+        3.067711
+      ],
+      "name": "Viewpoint 1"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "name": "Stage 2"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        0.151103467,
+        0.4686213,
+        -0.751139939,
+        0.439716518
+      ],
+      "scale": [
+        0.244467407,
+        0.239554763,
+        0.252719522
+      ],
+      "translation": [
+        8.205474,
+        2.55894065,
+        3.05204844
+      ],
+      "name": "Spherabox 1"
+    },
+    {
+      "mesh": 1,
+      "rotation": [
+        0.433657,
+        -0.1386578,
+        0.7580689,
+        -0.4669552
+      ],
+      "scale": [
+        0.244467288,
+        0.239555836,
+        0.252720058
+      ],
+      "translation": [
+        8.4527,
+        2.09928513,
+        1.7419138
+      ],
+      "name": "Spherabox 2"
+    },
+    {
+      "mesh": 2,
+      "rotation": [
+        0.0270699076,
+        0.203161523,
+        -0.875474632,
+        0.4376493
+      ],
+      "scale": [
+        0.244467646,
+        0.239555717,
+        0.252718955
+      ],
+      "translation": [
+        8.859591,
+        1.57804286,
+        2.73191476
+      ],
+      "name": "Spherabox 3"
+    },
+    {
+      "mesh": 3,
+      "rotation": [
+        -0.0292911138,
+        -0.937037766,
+        0.0354092158,
+        0.346191436
+      ],
+      "scale": [
+        1.24432969,
+        1.24430585,
+        1.2443279
+      ],
+      "translation": [
+        8.859412,
+        0.523914933,
+        2.67397666
+      ],
+      "name": "Tube 4"
+    },
+    {
+      "mesh": 4,
+      "rotation": [
+        0.0525318272,
+        -0.04914587,
+        -0.9804059,
+        0.183383167
+      ],
+      "scale": [
+        0.244467676,
+        0.239555821,
+        0.252719343
+      ],
+      "translation": [
+        8.098094,
+        1.78883541,
+        2.54954863
+      ],
+      "name": "Spherabox 5"
+    },
+    {
+      "mesh": 5,
+      "rotation": [
+        -0.134429038,
+        -0.0146647021,
+        0.8286608,
+        -0.5431714
+      ],
+      "scale": [
+        0.2444666,
+        0.239555031,
+        0.252718955
+      ],
+      "translation": [
+        8.672646,
+        2.75644,
+        2.00911045
+      ],
+      "name": "Spherabox 6"
+    },
+    {
+      "mesh": 6,
+      "rotation": [
+        -0.189850882,
+        -0.220984414,
+        0.8209231,
+        -0.49112916
+      ],
+      "scale": [
+        0.24446775,
+        0.2395557,
+        0.252719641
+      ],
+      "translation": [
+        8.407973,
+        1.21964431,
+        2.59721875
+      ],
+      "name": "Spherabox 7"
+    },
+    {
+      "mesh": 7,
+      "rotation": [
+        -0.04233101,
+        0.0739853457,
+        -0.9957436,
+        0.0350569524
+      ],
+      "scale": [
+        0.24446781,
+        0.239555866,
+        0.252719283
+      ],
+      "translation": [
+        8.640355,
+        3.45213771,
+        2.40854287
+      ],
+      "name": "Spherabox 8"
+    },
+    {
+      "mesh": 5,
+      "rotation": [
+        -0.646086156,
+        -0.5044681,
+        0.0494857766,
+        -0.5706451
+      ],
+      "scale": [
+        0.2444663,
+        0.239554957,
+        0.252720237
+      ],
+      "translation": [
+        8.866268,
+        1.58011723,
+        3.23436975
+      ],
+      "name": "Spherabox 9"
+    },
+    {
+      "mesh": 6,
+      "rotation": [
+        -0.513920963,
+        -0.5431321,
+        -0.0197125673,
+        -0.6637049
+      ],
+      "scale": [
+        0.24446629,
+        0.239554286,
+        0.2527199
+      ],
+      "translation": [
+        8.840492,
+        2.400152,
+        1.82176292
+      ],
+      "name": "Spherabox 10"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        -0.267882943,
+        -0.843333244,
+        -0.09535807,
+        -0.45599848
+      ],
+      "scale": [
+        0.244467542,
+        0.239554331,
+        0.2527205
+      ],
+      "translation": [
+        8.089789,
+        2.120849,
+        2.0330894
+      ],
+      "name": "Spherabox 11"
+    },
+    {
+      "mesh": 2,
+      "rotation": [
+        -0.4334818,
+        -0.733332336,
+        0.0423855372,
+        -0.5220352
+      ],
+      "scale": [
+        0.2444668,
+        0.239554361,
+        0.252719939
+      ],
+      "translation": [
+        8.349877,
+        2.478296,
+        3.49683642
+      ],
+      "name": "Spherabox 12"
+    },
+    {
+      "mesh": 7,
+      "rotation": [
+        -0.410292119,
+        -0.7755389,
+        0.175779641,
+        -0.4464318
+      ],
+      "scale": [
+        0.244466826,
+        0.239554375,
+        0.252720118
+      ],
+      "translation": [
+        9.20672,
+        1.97271514,
+        2.20285058
+      ],
+      "name": "Spherabox 13"
+    },
+    {
+      "mesh": 1,
+      "rotation": [
+        -0.344598621,
+        -0.6450803,
+        0.204195887,
+        -0.650712848
+      ],
+      "scale": [
+        0.24446623,
+        0.239554137,
+        0.252719641
+      ],
+      "translation": [
+        8.623494,
+        2.08621335,
+        2.92265081
+      ],
+      "name": "Spherabox 14"
+    },
+    {
+      "mesh": 4,
+      "rotation": [
+        -0.5748858,
+        -0.629038,
+        0.127107561,
+        -0.507603467
+      ],
+      "scale": [
+        0.2444664,
+        0.239554361,
+        0.25271976
+      ],
+      "translation": [
+        8.202448,
+        3.3111968,
+        1.82224929
+      ],
+      "name": "Spherabox 15"
+    },
+    {
+      "mesh": 1,
+      "rotation": [
+        -0.170287922,
+        -0.5353062,
+        0.6667393,
+        0.489804149
+      ],
+      "scale": [
+        0.24446699,
+        0.239554822,
+        0.2527198
+      ],
+      "translation": [
+        8.884034,
+        2.96828723,
+        2.42567134
+      ],
+      "name": "Spherabox 16"
+    },
+    {
+      "mesh": 4,
+      "rotation": [
+        -0.242435142,
+        -0.481295735,
+        0.635047853,
+        0.553438246
+      ],
+      "scale": [
+        0.2444669,
+        0.2395549,
+        0.25271976
+      ],
+      "translation": [
+        8.900337,
+        1.22253537,
+        2.399235
+      ],
+      "name": "Spherabox 17"
+    },
+    {
+      "mesh": 7,
+      "rotation": [
+        -0.0561575145,
+        -0.5218578,
+        0.331695467,
+        0.7838934
+      ],
+      "scale": [
+        0.244466245,
+        0.239554271,
+        0.252719522
+      ],
+      "translation": [
+        9.38526249,
+        1.82333243,
+        2.81232929
+      ],
+      "name": "Spherabox 18"
+    },
+    {
+      "mesh": 2,
+      "rotation": [
+        -0.3865044,
+        -0.637562752,
+        0.3532997,
+        0.5650729
+      ],
+      "scale": [
+        0.244466409,
+        0.239554659,
+        0.25271982
+      ],
+      "translation": [
+        7.815126,
+        2.37851238,
+        2.46801281
+      ],
+      "name": "Spherabox 19"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        0.382873684,
+        0.6334902,
+        -0.312517375,
+        -0.5953409
+      ],
+      "scale": [
+        0.244466782,
+        0.239554584,
+        0.25271973
+      ],
+      "translation": [
+        9.251207,
+        1.54455268,
+        2.37151861
+      ],
+      "name": "Spherabox 20"
+    },
+    {
+      "mesh": 6,
+      "rotation": [
+        -0.291007876,
+        -0.5567587,
+        0.492613077,
+        0.602218
+      ],
+      "scale": [
+        0.244466782,
+        0.239554688,
+        0.25272
+      ],
+      "translation": [
+        9.199101,
+        2.43751717,
+        2.64793134
+      ],
+      "name": "Spherabox 21"
+    },
+    {
+      "mesh": 5,
+      "rotation": [
+        -0.383735925,
+        -0.433787882,
+        0.697659,
+        0.421718836
+      ],
+      "scale": [
+        0.24446708,
+        0.239555225,
+        0.252719641
+      ],
+      "translation": [
+        8.299234,
+        2.30690336,
+        2.68011737
+      ],
+      "name": "Spherabox 22"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "Bubble_maker_2023-01-14_16.30.45"
+    }
+  ]
+}

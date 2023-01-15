@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Whiteboard
   - PlayerHand
+  - Shooting Cube
   layers:
   - Default
   - TransparentFX
