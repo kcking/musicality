@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
@@ -11,13 +12,15 @@ namespace Foundry
         public GameManager gameManager;
         public string noteValue;
 
-        private AudioSource audioSource;
+        public string id;
 
         public bool isCollided;
         public Collision collisionRef;
 
         public float delayBeforeSoundActive = 3.0f;
         public float timeSpawned;
+
+        private AudioSource audioSource;
             
         double? triggerTime;
         double? lastSentTriggerTime;
@@ -27,16 +30,14 @@ namespace Foundry
         {
             gameManager = FindObjectOfType<GameManager>();
             audioSource = GetComponent<AudioSource>();
+            id = Guid.NewGuid().ToString();
         }
 
         void Start()
         {
             timeSpawned = Time.time;
-            if(GameManager.currentAvailableNotes != null)
-                noteValue = GameManager.currentAvailableNotes[Random.Range(0, GameManager.currentAvailableNotes.Count)];
-            // If nothing is assigned to current available notes then 
-            if(GameManager.currentAvailableNotes == null)
-                noteValue = GameManager.allAvailableNotes[Random.Range(0, GameManager.allAvailableNotes.Length)];
+            
+            AssignNoteValue();
         }
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -100,6 +101,15 @@ namespace Foundry
         {
             Debug.Log(PhotonNetwork.Time);
             triggerTime = PhotonNetwork.Time;
+        }
+
+        private void AssignNoteValue()
+        {
+            if(GameManager.currentAvailableNotes != null)
+                noteValue = GameManager.currentAvailableNotes[UnityEngine.Random.Range(0, GameManager.currentAvailableNotes.Count)];
+            // If nothing is assigned to current available notes then 
+            if(GameManager.currentAvailableNotes == null)
+                noteValue = GameManager.allAvailableNotes[UnityEngine.Random.Range(0, GameManager.allAvailableNotes.Length)];
         }
         
     }

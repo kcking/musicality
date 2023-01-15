@@ -7,6 +7,7 @@ namespace Foundry
 {
     public class GrabAudioEffects : MonoBehaviour
     {
+        public SoundObject soundObject;
         // The current note value that the object would trigger if struck
         public string currentNoteValue = null;
 
@@ -23,6 +24,8 @@ namespace Foundry
         {
             // How big is each of the sections
             sectionSize = 2.0f / numberOfSections;
+
+            soundObject = GetComponent<SoundObject>();
         }
 
         void Update()
@@ -35,8 +38,13 @@ namespace Foundry
             Debug.Log("CollisionEnter");
             if (isGrabbed)
             {
-                UpdateCurrentNote();
-                AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>(), collision);
+                GameObject other = collision.gameObject;
+                if (string.Compare(other.GetComponent<SoundObject>().id, this.GetComponent<SoundObject>().id) < 0)
+                {
+                    UpdateCurrentNote();
+                    AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>(), collision);
+                }
+                
             }
         }
 
