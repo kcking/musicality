@@ -8,9 +8,30 @@ namespace Foundry
     [RequireComponent(typeof(AudioSource))]
     public class SoundObject : MonoBehaviour, Photon.Pun.IPunObservable
     {
+        public GameManager gameManager;
+        public string noteValue;
+
+        private AudioSource audioSource;
+
+        public bool isCollided;
+        public Collision collisionRef;
+            
         double? triggerTime;
         double? lastSentTriggerTime;
         double? playedTime;
+
+
+        void Start()
+        {
+            gameManager = FindObjectOfType<GameManager>();
+            audioSource = GetComponent<AudioSource>();
+            if(GameManager.currentAvailableNotes != null)
+                noteValue = GameManager.currentAvailableNotes[Random.Range(0, GameManager.currentAvailableNotes.Count)];
+            // If nothing is assigned to current available notes then 
+            if(GameManager.currentAvailableNotes == null)
+                noteValue = GameManager.allAvailableNotes[Random.Range(0, GameManager.allAvailableNotes.Length)];
+        }
+
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
             if (stream.IsWriting && triggerTime != lastSentTriggerTime)
@@ -24,12 +45,6 @@ namespace Foundry
             }
         }
 
-        // Start is called before the first frame update
-        void Start()
-        {
-            // InvokeRepeating("triggerLoop", 0, 2);
-        }
-
         void triggerLoop()
         {
             // GetComponent<AudioSource>().Play();
@@ -41,18 +56,32 @@ namespace Foundry
         {
             //  Color change code (random color)
             // GetComponent<MeshRenderer>().material.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
-
             if (triggerTime != null)
             {
                 if (playedTime != triggerTime)
                 {
-                    //  play it!
-                    playedTime = triggerTime;
-                    // AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
-                    AudioManager.instance.impactAudio.PlayRandomImpactClip(GetComponent<AudioSource>());
+                    if(isCollided)
+                    {
+                        AudioManager.instance.impactAudio.PlayImpactClip(noteValue, audioSource, collisionRef);
+                        isCollided = false;
+                    } else 
+                    {
+                        //  play it!
+                        playedTime = triggerTime;
+                        // AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
+                        AudioManager.instance.impactAudio.PlayRandomImpactClip(audioSource);
+                    }
+
                 }
             }
 
+        }
+
+        public void OnCollisionEnter(Collision collision)
+        {
+            collisionRef = collision;
+            isCollided = true;
+            trigger();
         }
 
         public void trigger()
@@ -60,5 +89,6 @@ namespace Foundry
             Debug.Log(PhotonNetwork.Time);
             triggerTime = PhotonNetwork.Time;
         }
+        
     }
 }
