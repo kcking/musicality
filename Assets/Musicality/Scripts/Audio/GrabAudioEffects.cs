@@ -21,7 +21,7 @@ namespace Foundry
 148.0f/255.0f, 0f, 211/255.0f) };
 
         [SerializeField]
-        private static float numberOfSections = 5.0f;
+        private static float numberOfSections = 6.0f;
         private float sectionSize;
 
         void Awake()
