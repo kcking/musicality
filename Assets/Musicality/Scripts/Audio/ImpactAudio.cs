@@ -11,13 +11,13 @@ namespace Foundry
 
         public Dictionary<string, AudioClip> hardImpactsDictionary = new Dictionary<string, AudioClip>(21);
         public Dictionary<string, AudioClip> softImpactsDictionary = new Dictionary<string, AudioClip>(21);
-         
-        public string[] notes = { "Eb2", "E2", "F2", "Gb2", "G2", "Ab2", "A2", "Bb2", "B2", "C3", "Db3", "D3", "Eb3", "E3", "F3", "Gb3", "G3", "Ab3", "A3", "Bb3", "B3"};
 
-        public float maxImpact = 2.00f; // Maximum impact force
+        public string[] notes = { "Eb2", "E2", "F2", "Gb2", "G2", "Ab2", "A2", "Bb2", "B2", "C3", "Db3", "D3", "Eb3", "E3", "F3", "Gb3", "G3", "Ab3", "A3", "Bb3", "B3" };
+
+        public float maxImpact = 4.00f; // Maximum impact force
 
         void Start()
-        {   
+        {
             LoadClipDictionarys();
         }
 
@@ -26,7 +26,7 @@ namespace Foundry
             AudioClip clip;
 
             string clipName = notes[Random.Range(0, notes.Length)];
-            
+
             // Try to get the clip from the dictionary
             if (hardImpactsDictionary.TryGetValue(clipName, out clip))
             {
@@ -46,9 +46,9 @@ namespace Foundry
             float volume = impactForce / maxImpact;
 
             string clipName = notes[Random.Range(0, notes.Length)];
-            
+
             objectSource.volume = Mathf.Clamp(volume, 0f, 1f);
-            
+
             // Try to get the clip from the dictionary
             if (hardImpactsDictionary.TryGetValue(clipName, out clip))
             {
@@ -63,7 +63,7 @@ namespace Foundry
         public void PlayImpactClip(string clipName, AudioSource objectSource)
         {
             AudioClip clip;
-            
+
             // Try to get the clip from the dictionary
             if (hardImpactsDictionary.TryGetValue(clipName, out clip))
             {
@@ -82,7 +82,7 @@ namespace Foundry
             float impactForce = collision.impulse.magnitude;
             float volume = impactForce / maxImpact;
 
-            objectSource.volume = Mathf.Clamp(volume, .2f, 1f);
+            objectSource.volume = Mathf.Clamp(volume, .05f, 1f);
             // Try to get the clip from the dictionary
             if (hardImpactsDictionary.TryGetValue(clipName, out clip))
             {
@@ -98,7 +98,7 @@ namespace Foundry
         private void LoadClipDictionarys()
         {
             // Add each audio clip into the dictionary. These can then be accessed by it's corresponding musical note, rather than it's index.
-           
+
             for (int i = 0; i < hardImpactClips.Count; i++)
             {
                 hardImpactsDictionary.Add(notes[i], hardImpactClips[i]);

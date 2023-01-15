@@ -55,14 +55,14 @@ namespace Foundry
         void OnCollisionEnter(Collision collision)
         {
             Debug.Log("CollisionEnter");
-            Debug.Log("MagnitudeOfCollision is " + collision.impulse.magnitude);
             if (isGrabbed)
             {
+                Debug.Log("MagnitudeOfCollision is " + collision.relativeVelocity.magnitude);
                 GameObject other = collision.gameObject;
                 if (string.Compare(other.GetComponent<SoundObject>().id, this.GetComponent<SoundObject>().id) < 0)
                 {
                     UpdateCurrentNote();
-                    AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>(), collision);
+                    AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>());
                 }
             }
         }

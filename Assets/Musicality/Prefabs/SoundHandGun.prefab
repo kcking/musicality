@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6171218075538847350}
   - component: {fileID: 6171218075538847356}
   - component: {fileID: 6171218075538847359}
-  - component: {fileID: 6171218075538847358}
   - component: {fileID: 6171218075538847353}
   - component: {fileID: 6171218075538847352}
   - component: {fileID: 6171218075538847355}
@@ -20,6 +19,7 @@ GameObject:
   - component: {fileID: 6171218075538847348}
   - component: {fileID: 6171218075538847357}
   - component: {fileID: 6171218075538847330}
+  - component: {fileID: 8996689646983879742}
   m_Layer: 10
   m_Name: SoundHandGun
   m_TagString: Untagged
@@ -94,19 +94,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6171218075538847358
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6171218075538847345}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.7501657, y: 0.7845385, z: 0.75491905}
-  m_Center: {x: 0.022609055, y: -0.017007357, z: -0.00500381}
 --- !u!114 &6171218075538847353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,6 +453,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0097ffa320048458eb8e8b4263cafa99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  noteValue: 
+  id: 
+  isCollided: 0
+  delayBeforeSoundActive: 3
+  timeSpawned: 0
 --- !u!114 &6171218075538847330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,6 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2286e28f5364e485085ee54070bf8488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundObject: {fileID: 0}
   currentNoteValue: 
   isGrabbed: 0
   positionNotes:
@@ -486,6 +480,19 @@ MonoBehaviour:
   - Db3
   - E3
   - Gb3
+--- !u!135 &8996689646983879742
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171218075538847345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000239
+  m_Center: {x: 6.776263e-22, y: -0.00000011920929, z: 0.00000017881396}
 --- !u!1 &6171218075814828877
 GameObject:
   m_ObjectHideFlags: 0
