@@ -8,9 +8,29 @@ namespace Foundry
     [RequireComponent(typeof(AudioSource))]
     public class SoundObject : MonoBehaviour, Photon.Pun.IPunObservable
     {
+        public GameManager gameManager;
+        public string noteValue;
+
+        private AudioSource audioSource;
+
+        public bool isCollided;
+        public Collision collisionRef;
+            
         double? triggerTime;
         double? lastSentTriggerTime;
         double? playedTime;
+
+
+        void Start()
+        {
+            FindObjectOfType<GameManager>();
+            audioSource = GetComponent<AudioSource>();
+            noteValue = gameManager.currentAvailableNotes[Random.Range(0, gameManager.currentAvailableNotes.Count)];
+            // If nothing is assigned to current available notes then 
+            if(gameManager.currentAvailableNotes == null)
+                noteValue = GameManager.allAvailableNotes[Random.Range(0, GameManager.allAvailableNotes.Length)];
+        }
+
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
             if (stream.IsWriting && triggerTime != lastSentTriggerTime)
@@ -22,11 +42,6 @@ namespace Foundry
             {
                 triggerTime = (double)stream.ReceiveNext();
             }
-        }
-
-        void Start()
-        {
-            // InvokeRepeating("triggerLoop", 0, 2);
         }
 
         void triggerLoop()
@@ -44,25 +59,35 @@ namespace Foundry
             {
                 if (playedTime != triggerTime)
                 {
-                    //  play it!
-                    playedTime = triggerTime;
-                    // AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
-                    AudioManager.instance.impactAudio.PlayRandomImpactClip(GetComponent<AudioSource>());
+                    if(isCollided)
+                    {
+                        AudioManager.instance.impactAudio.PlayImpactClip(noteValue, audioSource, collisionRef);
+                        isCollided = false;
+                    } else 
+                    {
+                        //  play it!
+                        playedTime = triggerTime;
+                        // AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
+                        AudioManager.instance.impactAudio.PlayRandomImpactClip(audioSource);
+                    }
+
                 }
             }
 
         }
 
-        public void OnCollisionEnter()
+        public void OnCollisionEnter(Collision collision)
         {
-            
+            collisionRef = collision;
+            isCollided = true;
+            trigger();
         }
-        
 
         public void trigger()
         {
             Debug.Log(PhotonNetwork.Time);
             triggerTime = PhotonNetwork.Time;
         }
+        
     }
 }
