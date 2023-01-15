@@ -17,7 +17,8 @@ namespace Foundry
 
         // What note values will be held by the differnet positions
         public string[] positionNotes = NoteLayouts.APentatonic;
-        static Color[] colors = { new Color(1.0f, 0.0f, 0.0f), new Color(1.0f, 127.0f / 255.0f, 0.0f), new Color(1.0f, 1.0f, 0.0f), new Color(0.0f, 1.0f, 0.0f), new Color(0.0f, 0.0f, 1.0f) };
+        static Color[] colors = { new Color(1.0f, 0.0f, 0.0f), new Color(1.0f, 127.0f / 255.0f, 0.0f), new Color(1.0f, 1.0f, 0.0f), new Color(0.0f, 1.0f, 0.0f), new Color(0.0f, 0.0f, 1.0f), new Color(
+148.0f/255.0f, 0f, 211/255.0f) };
 
         [SerializeField]
         private static float numberOfSections = 5.0f;
@@ -43,6 +44,9 @@ namespace Foundry
                 }
             }
         }
+
+        private double triggerTime;
+        private string triggerClip;
 
         void OnCollisionEnter(Collision collision)
         {
