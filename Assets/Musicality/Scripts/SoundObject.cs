@@ -71,11 +71,12 @@ namespace Foundry
             {
                 if (playedTime != triggerTime)
                 {
-                    if(isCollided)
-                    {
-                        AudioManager.instance.impactAudio.PlayImpactClip(noteValue, audioSource, collisionRef);
-                        isCollided = false;
-                    } else 
+                    //// COLLISSION METHOD TO TRIGGER SOUND!!!!!!!
+                    // if(isCollided)
+                    // {
+                    //     AudioManager.instance.impactAudio.PlayImpactClip(noteValue, audioSource, collisionRef);
+                    //     isCollided = false;
+                    // } else 
                     {
                         //  play it!
                         playedTime = triggerTime;
@@ -87,12 +88,13 @@ namespace Foundry
 
         }
 
-        public void OnCollisionEnter(Collision collision)
-        {
-            collisionRef = collision;
-            isCollided = true;
-            trigger();
-        }
+        //// COLLISSION METHOD TO TRIGGER SOUND!!!!!!!
+        // public void OnCollisionEnter(Collision collision)
+        // {
+        //     collisionRef = collision;
+        //     isCollided = true;
+        //     trigger();
+        // }
 
         public void trigger()
         {
