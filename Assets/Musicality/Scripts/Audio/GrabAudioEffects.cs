@@ -90,7 +90,6 @@ namespace Foundry
             }
         }
 
-        private double triggerTime;
         private string triggerClip;
 
         void OnCollisionEnter(Collision collision)
