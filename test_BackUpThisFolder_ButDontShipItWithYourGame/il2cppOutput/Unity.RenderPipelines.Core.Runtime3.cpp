@@ -1887,6 +1887,8 @@ struct MethodBase_t  : public MemberInfo_t
 // UnityEngine.PropertyAttribute
 struct PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 };
 
 // System.Reflection.PropertyInfo
@@ -2889,7 +2891,7 @@ struct U3CU3Ec__DisplayClass10_0_tA3677BEC17D00D1D3B4E9AFB65A496B9F55FC5A3
 struct Indent_t0D5C0C4758A92151C838F36924BAAC62C4B5CE1F  : public PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0
 {
 	// System.Int32 UnityEngine.Rendering.VolumeComponent/Indent::relativeAmount
-	int32_t ___relativeAmount_0;
+	int32_t ___relativeAmount_1;
 };
 
 // UnityEngine.Rendering.ClampedFloatParameter
@@ -24528,7 +24530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Indent__ctor_m7D602088CDE705BA4ACCC882A7
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// => this.relativeAmount = relativeAmount;
 		int32_t L_0 = ___0_relativeAmount;
-		__this->___relativeAmount_0 = L_0;
+		__this->___relativeAmount_1 = L_0;
 		return;
 	}
 }

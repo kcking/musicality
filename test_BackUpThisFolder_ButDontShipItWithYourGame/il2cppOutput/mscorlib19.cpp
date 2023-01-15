@@ -766,6 +766,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralD3B939C66842C19F9D992E5FE7DF3EC2A50D2D5E
 IL2CPP_EXTERN_C String_t* _stringLiteralD8A1B1CDBFADA5F4368241E835B981A540B310A2;
 IL2CPP_EXTERN_C String_t* _stringLiteralE13808A85E2BA41FC42181872C6D1D3D044C2F82;
 IL2CPP_EXTERN_C String_t* _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC;
+IL2CPP_EXTERN_C String_t* _stringLiteralE280D065A824A791F8305234D3E093FC9A5A90C7;
 IL2CPP_EXTERN_C String_t* _stringLiteralE42E8BB820D4F7550A0F04619F4E15FDC56943B9;
 IL2CPP_EXTERN_C String_t* _stringLiteralE48BDEBBF62F453A92D11476A739FAA861ED1695;
 IL2CPP_EXTERN_C String_t* _stringLiteralE568B64D76C577FABE60C3ED881B5AEF80198E35;
@@ -26453,6 +26454,26 @@ IL_0031:
 	{
 		bool L_7 = V_0;
 		return L_7;
+	}
+}
+// System.String[] System.IO.Directory::GetFiles(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* Directory_GetFiles_m3E6AA407767C85CD62C5FD2750747274D1C4EA76 (String_t* ___0_path, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumerationOptions_t7C636684933367EC8E4B428073BF1FD4C5CDCA0B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE280D065A824A791F8305234D3E093FC9A5A90C7);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___0_path;
+		il2cpp_codegen_runtime_class_init_inline(EnumerationOptions_t7C636684933367EC8E4B428073BF1FD4C5CDCA0B_il2cpp_TypeInfo_var);
+		EnumerationOptions_t7C636684933367EC8E4B428073BF1FD4C5CDCA0B* L_1;
+		L_1 = EnumerationOptions_get_Compatible_m5BF7700420444871B5758FE9AEE78585FE8910E0_inline(NULL);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2;
+		L_2 = Directory_GetFiles_mFEFF31CD9B172BDE3C33F59C02BCF6AF9D1FAE5C(L_0, _stringLiteralE280D065A824A791F8305234D3E093FC9A5A90C7, L_1, NULL);
+		return L_2;
 	}
 }
 // System.String[] System.IO.Directory::GetFiles(System.String,System.String)

@@ -5371,6 +5371,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UInt16_GetHashCode_m534E5103D0DA9C6FC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt16_ToString_m57629B7E74D92A54414073D5C27D6827C93A4DD5 (uint16_t* __this, const RuntimeMethod* method) ;
 // System.String System.UInt16::ToString(System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt16_ToString_mCFE0EB73F03E7230D7F2694140FF9CECE793184D (uint16_t* __this, RuntimeObject* ___0_provider, const RuntimeMethod* method) ;
+// System.String System.UInt16::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt16_ToString_m75C61173B6A4DCF2D678D8A03EA713FEE29CC98C (uint16_t* __this, String_t* ___0_format, const RuntimeMethod* method) ;
 // System.String System.UInt16::ToString(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt16_ToString_mBD648884B6569D3E7D779669EEFCB1ED5EE4A521 (uint16_t* __this, String_t* ___0_format, RuntimeObject* ___1_provider, const RuntimeMethod* method) ;
 // System.Boolean System.UInt16::TryFormat(System.Span`1<System.Char>,System.Int32&,System.ReadOnlySpan`1<System.Char>,System.IFormatProvider)
@@ -22203,6 +22205,35 @@ IL2CPP_EXTERN_C  String_t* UInt16_ToString_mCFE0EB73F03E7230D7F2694140FF9CECE793
 	_thisAdjusted = reinterpret_cast<uint16_t*>(__this + _offset);
 	String_t* _returnValue;
 	_returnValue = UInt16_ToString_mCFE0EB73F03E7230D7F2694140FF9CECE793184D(_thisAdjusted, ___0_provider, method);
+	return _returnValue;
+}
+// System.String System.UInt16::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt16_ToString_m75C61173B6A4DCF2D678D8A03EA713FEE29CC98C (uint16_t* __this, String_t* ___0_format, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Number_tA71F95D4B9F046BDA97EFA91BC6517925969650A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = *((uint16_t*)__this);
+		String_t* L_1 = ___0_format;
+		ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 L_2;
+		L_2 = String_op_Implicit_m7D7FE0449303AF92D8B2A85A06ADC6933B2ECC3A_inline(L_1, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Number_tA71F95D4B9F046BDA97EFA91BC6517925969650A_il2cpp_TypeInfo_var);
+		String_t* L_3;
+		L_3 = Number_FormatUInt32_m6FFCC98DB9CAC4AB1BB4EED7A9AE24DB5824A8B4(L_0, L_2, (RuntimeObject*)NULL, NULL);
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C  String_t* UInt16_ToString_m75C61173B6A4DCF2D678D8A03EA713FEE29CC98C_AdjustorThunk (RuntimeObject* __this, String_t* ___0_format, const RuntimeMethod* method)
+{
+	uint16_t* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<uint16_t*>(__this + _offset);
+	String_t* _returnValue;
+	_returnValue = UInt16_ToString_m75C61173B6A4DCF2D678D8A03EA713FEE29CC98C(_thisAdjusted, ___0_format, method);
 	return _returnValue;
 }
 // System.String System.UInt16::ToString(System.String,System.IFormatProvider)

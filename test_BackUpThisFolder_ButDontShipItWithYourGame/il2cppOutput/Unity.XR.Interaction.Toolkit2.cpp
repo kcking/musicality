@@ -3134,6 +3134,8 @@ struct PhysicsScene2D_t550D023B9E77BE6844564BB4F9FA291EEA10FDC9
 // UnityEngine.PropertyAttribute
 struct PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
+	// System.Int32 UnityEngine.PropertyAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_0;
 };
 
 // System.Reflection.PropertyInfo
@@ -4087,7 +4089,7 @@ struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshaled_com
 struct RequireInterfaceAttribute_t84E68526970DA66A5C3285E399BFF3ADDF2E9067  : public PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0
 {
 	// System.Type UnityEngine.XR.Interaction.Toolkit.Utilities.Internal.RequireInterfaceAttribute::<interfaceType>k__BackingField
-	Type_t* ___U3CinterfaceTypeU3Ek__BackingField_0;
+	Type_t* ___U3CinterfaceTypeU3Ek__BackingField_1;
 };
 
 // System.RuntimeFieldHandle
@@ -29434,7 +29436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* RequireInterfaceAttribute_get_interfa
 {
 	{
 		// public Type interfaceType { get; }
-		Type_t* L_0 = __this->___U3CinterfaceTypeU3Ek__BackingField_0;
+		Type_t* L_0 = __this->___U3CinterfaceTypeU3Ek__BackingField_1;
 		return L_0;
 	}
 }
@@ -29446,8 +29448,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequireInterfaceAttribute__ctor_m84D8159
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.interfaceType = interfaceType;
 		Type_t* L_0 = ___0_interfaceType;
-		__this->___U3CinterfaceTypeU3Ek__BackingField_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CinterfaceTypeU3Ek__BackingField_0), (void*)L_0);
+		__this->___U3CinterfaceTypeU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CinterfaceTypeU3Ek__BackingField_1), (void*)L_0);
 		// }
 		return;
 	}

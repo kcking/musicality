@@ -42,6 +42,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Xml_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Xml_Linq_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AnimationModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AssetBundleModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AudioModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_CoreModule_CodeGenModule;
@@ -67,6 +68,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIElementsNativeModule_C
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UI_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityAnalyticsModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestAssetBundleModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
@@ -90,11 +92,18 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_OpenXR_Features_Conformance
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_OpenXR_Features_MockRuntime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_OpenXR_Features_OculusQuestSupport_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_OpenXR_Features_RuntimeDebugger_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Wave_Essence_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Wave_Essence_Controller_Model_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Wave_Essence_Hand_Model_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Wave_Essence_InputModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Wave_Essence_Interaction_Mode_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Wave_Native_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Wave_XRSDK_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_WebView_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[75] = 
+const Il2CppCodeGenModule* g_CodeGenModules[84] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
@@ -120,6 +129,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[75] =
 	(&g_System_Xml_Linq_CodeGenModule),
 	(&g_UnityEngine_AndroidJNIModule_CodeGenModule),
 	(&g_UnityEngine_AnimationModule_CodeGenModule),
+	(&g_UnityEngine_AssetBundleModule_CodeGenModule),
 	(&g_UnityEngine_AudioModule_CodeGenModule),
 	(&g_UnityEngine_CodeGenModule),
 	(&g_UnityEngine_CoreModule_CodeGenModule),
@@ -145,6 +155,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[75] =
 	(&g_UnityEngine_UIModule_CodeGenModule),
 	(&g_UnityEngine_UI_CodeGenModule),
 	(&g_UnityEngine_UnityAnalyticsModule_CodeGenModule),
+	(&g_UnityEngine_UnityWebRequestAssetBundleModule_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestModule_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule),
 	(&g_UnityEngine_VRModule_CodeGenModule),
@@ -168,6 +179,13 @@ const Il2CppCodeGenModule* g_CodeGenModules[75] =
 	(&g_Unity_XR_OpenXR_Features_MockRuntime_CodeGenModule),
 	(&g_Unity_XR_OpenXR_Features_OculusQuestSupport_CodeGenModule),
 	(&g_Unity_XR_OpenXR_Features_RuntimeDebugger_CodeGenModule),
+	(&g_Wave_Essence_CodeGenModule),
+	(&g_Wave_Essence_Controller_Model_CodeGenModule),
+	(&g_Wave_Essence_Hand_Model_CodeGenModule),
+	(&g_Wave_Essence_InputModule_CodeGenModule),
+	(&g_Wave_Essence_Interaction_Mode_CodeGenModule),
+	(&g_Wave_Native_CodeGenModule),
+	(&g_Wave_XRSDK_CodeGenModule),
 	(&g_WebView_CodeGenModule),
 	(&g___Generated_CodeGenModule),
 	(&g_mscorlib_CodeGenModule),
@@ -175,20 +193,20 @@ const Il2CppCodeGenModule* g_CodeGenModules[75] =
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	14,
+	16,
 	g_ReversePInvokeWrapperPointers,
-	60507,
+	63415,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	14877,
+	15515,
 	g_Il2CppInvokerPointers,
-	2123,
+	2262,
 	g_UnresolvedVirtualMethodPointers,
-	711,
+	779,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	75,
+	84,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

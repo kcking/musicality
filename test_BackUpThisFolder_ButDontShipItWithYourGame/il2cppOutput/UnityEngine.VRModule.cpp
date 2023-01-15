@@ -17,14 +17,24 @@ struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A;
 // System.Delegate[]
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // System.String[]
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+// System.ArgumentOutOfRangeException
+struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 // System.String
 struct String_t;
 // System.Void
@@ -32,9 +42,15 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // UnityEngine.Camera/CameraCallback
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 
+IL2CPP_EXTERN_C RuntimeClass* ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XRDevice_tD076A68EFE413B3EEEEA362BE0364A488B58F194_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8;
+IL2CPP_EXTERN_C String_t* _stringLiteral71EEFB4B14E2D5E444995941E9FD94FABD674F54;
+IL2CPP_EXTERN_C const RuntimeMethod* XRSettings_set_renderViewportScale_m96E308EEAE4B92F92ACD2866E3958070FA3E5313_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
 
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 
@@ -220,6 +236,83 @@ struct Delegate_t_marshaled_com
 	int32_t ___method_is_virtual_12;
 };
 
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
@@ -259,6 +352,11 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 	Delegate_t_marshaled_com** ___delegates_13;
 };
 
+// System.SystemException
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+
 // System.Action`1<System.Object>
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
 {
@@ -269,9 +367,23 @@ struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A  : public MulticastDel
 {
 };
 
+// System.ArgumentException
+struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+	// System.String System.ArgumentException::_paramName
+	String_t* ____paramName_18;
+};
+
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
+};
+
+// System.ArgumentOutOfRangeException
+struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
+{
+	// System.Object System.ArgumentOutOfRangeException::_actualValue
+	RuntimeObject* ____actualValue_19;
 };
 
 // UnityEngine.Camera
@@ -349,6 +461,15 @@ struct IntPtr_t_StaticFields
 
 // System.Delegate
 
+// System.Exception
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+
+// System.Exception
+
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 {
@@ -366,6 +487,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // System.MulticastDelegate
 
+// System.SystemException
+
+// System.SystemException
+
 // System.Action`1<System.Object>
 
 // System.Action`1<System.Object>
@@ -374,9 +499,17 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // System.Action`1<System.String>
 
+// System.ArgumentException
+
+// System.ArgumentException
+
 // UnityEngine.Behaviour
 
 // UnityEngine.Behaviour
+
+// System.ArgumentOutOfRangeException
+
+// System.ArgumentOutOfRangeException
 
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
@@ -437,6 +570,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_get_eyeTextureDesc_Injected_m2B01F9A50CE1E88530044A5D342C1AE151BA17B5 (RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* ___0_ret, const RuntimeMethod* method) ;
 // System.Single UnityEngine.XR.XRSettings::get_renderViewportScaleInternal()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRSettings_get_renderViewportScaleInternal_mC9FFB83588F0865E76B78FB334AE6AAF0FF2EC24 (const RuntimeMethod* method) ;
+// System.Void System.ArgumentOutOfRangeException::.ctor(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_mE5B2755F0BEA043CACF915D5CE140859EE58FA66 (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* __this, String_t* ___0_paramName, String_t* ___1_message, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.XRSettings::set_renderViewportScaleInternal(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_renderViewportScaleInternal_m938F25CB6C2F43493823E5C00A9A42EC721110B3 (float ___0_value, const RuntimeMethod* method) ;
 // System.Void System.Action`1<System.String>::Invoke(T)
 inline void Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* __this, String_t* ___0_obj, const RuntimeMethod* method)
 {
@@ -464,6 +601,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRSettings_get_enabled_mC22ABF5BF7D835DA
 	_il2cpp_icall_func = (XRSettings_get_enabled_mC22ABF5BF7D835DAB861A1FA384DBB8904D15E70_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::get_enabled()");
 	bool icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
+}
+// System.Void UnityEngine.XR.XRSettings::set_gameViewRenderMode(UnityEngine.XR.GameViewRenderMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_gameViewRenderMode_mD4A5BDEBD225B0FA8B0E86CAB7B92B9FC543628F (int32_t ___0_value, const RuntimeMethod* method) 
+{
+	typedef void (*XRSettings_set_gameViewRenderMode_mD4A5BDEBD225B0FA8B0E86CAB7B92B9FC543628F_ftn) (int32_t);
+	static XRSettings_set_gameViewRenderMode_mD4A5BDEBD225B0FA8B0E86CAB7B92B9FC543628F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRSettings_set_gameViewRenderMode_mD4A5BDEBD225B0FA8B0E86CAB7B92B9FC543628F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::set_gameViewRenderMode(UnityEngine.XR.GameViewRenderMode)");
+	_il2cpp_icall_func(___0_value);
 }
 // System.Boolean UnityEngine.XR.XRSettings::get_isDeviceActive()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRSettings_get_isDeviceActive_m0C8A5F7EC76EF392020137915E4DD8E75EBDD6B8 (const RuntimeMethod* method) 
@@ -542,6 +688,52 @@ IL_0009:
 		return L_1;
 	}
 }
+// System.Void UnityEngine.XR.XRSettings::set_renderViewportScale(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_renderViewportScale_m96E308EEAE4B92F92ACD2866E3958070FA3E5313 (float ___0_value, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		float L_0 = ___0_value;
+		if ((((float)L_0) < ((float)(0.0f))))
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		float L_1 = ___0_value;
+		G_B3_0 = ((((float)L_1) > ((float)(1.0f)))? 1 : 0);
+		goto IL_0014;
+	}
+
+IL_0013:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0014:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* L_3 = (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var)));
+		NullCheck(L_3);
+		ArgumentOutOfRangeException__ctor_mE5B2755F0BEA043CACF915D5CE140859EE58FA66(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8)), ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral71EEFB4B14E2D5E444995941E9FD94FABD674F54)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&XRSettings_set_renderViewportScale_m96E308EEAE4B92F92ACD2866E3958070FA3E5313_RuntimeMethod_var)));
+	}
+
+IL_0028:
+	{
+		float L_4 = ___0_value;
+		XRSettings_set_renderViewportScaleInternal_m938F25CB6C2F43493823E5C00A9A42EC721110B3(L_4, NULL);
+		return;
+	}
+}
 // System.Single UnityEngine.XR.XRSettings::get_renderViewportScaleInternal()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRSettings_get_renderViewportScaleInternal_mC9FFB83588F0865E76B78FB334AE6AAF0FF2EC24 (const RuntimeMethod* method) 
 {
@@ -551,6 +743,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRSettings_get_renderViewportScaleInter
 	_il2cpp_icall_func = (XRSettings_get_renderViewportScaleInternal_mC9FFB83588F0865E76B78FB334AE6AAF0FF2EC24_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::get_renderViewportScaleInternal()");
 	float icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
+}
+// System.Void UnityEngine.XR.XRSettings::set_renderViewportScaleInternal(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_renderViewportScaleInternal_m938F25CB6C2F43493823E5C00A9A42EC721110B3 (float ___0_value, const RuntimeMethod* method) 
+{
+	typedef void (*XRSettings_set_renderViewportScaleInternal_m938F25CB6C2F43493823E5C00A9A42EC721110B3_ftn) (float);
+	static XRSettings_set_renderViewportScaleInternal_m938F25CB6C2F43493823E5C00A9A42EC721110B3_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRSettings_set_renderViewportScaleInternal_m938F25CB6C2F43493823E5C00A9A42EC721110B3_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::set_renderViewportScaleInternal(System.Single)");
+	_il2cpp_icall_func(___0_value);
+}
+// System.Void UnityEngine.XR.XRSettings::set_occlusionMaskScale(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_occlusionMaskScale_mFB321295E98DE1A01268FABCCB167CC2DCD8157E (float ___0_value, const RuntimeMethod* method) 
+{
+	typedef void (*XRSettings_set_occlusionMaskScale_mFB321295E98DE1A01268FABCCB167CC2DCD8157E_ftn) (float);
+	static XRSettings_set_occlusionMaskScale_mFB321295E98DE1A01268FABCCB167CC2DCD8157E_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRSettings_set_occlusionMaskScale_mFB321295E98DE1A01268FABCCB167CC2DCD8157E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::set_occlusionMaskScale(System.Single)");
+	_il2cpp_icall_func(___0_value);
 }
 // System.String UnityEngine.XR.XRSettings::get_loadedDeviceName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRSettings_get_loadedDeviceName_mAEB3908916B98A9E8CF2FD8754B5AAB096245243 (const RuntimeMethod* method) 

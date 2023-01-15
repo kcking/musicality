@@ -16,6 +16,10 @@ namespace Foundry
         // Events to include in the start method for initialization
         public UnityEvent startEvents;
 
+
+        [SerializeField]
+        private bool isOnQuest;
+
         void Awake()
         {
             currentAvailableNotes = null;
@@ -23,7 +27,10 @@ namespace Foundry
         
         void Start()
         {
-            startEvents.Invoke();
+            if(!isOnQuest)
+            {
+                startEvents.Invoke();
+            }
         }
 
 
