@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 6171218075538847348}
   - component: {fileID: 6171218075538847357}
   - component: {fileID: 6171218075538847330}
+  - component: {fileID: 1418388700230096467}
   m_Layer: 10
   m_Name: SoundHandGun
   m_TagString: Untagged
@@ -486,6 +487,18 @@ MonoBehaviour:
   - Db3
   - E3
   - Gb3
+--- !u!114 &1418388700230096467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171218075538847345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5fc344bc741eb2449ca29f7312361c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6171218075814828877
 GameObject:
   m_ObjectHideFlags: 0
