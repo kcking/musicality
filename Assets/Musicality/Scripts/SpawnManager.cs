@@ -14,24 +14,25 @@ namespace Foundry
         public float spawnVelocity = 10f;
 
 
-    // Start is called before the first frame update
+        // Start is called before the first frame update
         void SpawnObject()
         {
-            PhotonNetwork.Instantiate(spawnObject.name, spawnLoc, Quaternion.identity);
+            GameObject spawnedObject = PhotonNetwork.Instantiate(spawnObject.name, spawnLoc, Quaternion.identity);
             //Instantiate(spawnObject, spawnLoc, Quaternion.identity);
-            Rigidbody rb = spawnObject.GetComponent<Rigidbody>();
+            Rigidbody rb = spawnedObject.GetComponent<Rigidbody>();
             rb.AddForce(Vector3.up * spawnVelocity, ForceMode.Impulse);
         }
 
 
-        void Start(){
+        void Start()
+        {
             InvokeRepeating("SpawnObject", 0, spawnRate);
         }
 
         // Update is called once per frame
         void Update()
         {
-        
+
         }
     }
 }
