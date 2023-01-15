@@ -9,6 +9,10 @@ namespace Foundry
         public static AudioManager instance;
 
         public ImpactAudio impactAudio;
+
+        public ReverseGrab reverseGrab;
+
+        private AudioSource audioSource;
         
         void Awake()
         {
@@ -23,14 +27,10 @@ namespace Foundry
             }
 
             DontDestroyOnLoad(gameObject);
-        }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
+            audioSource = GetComponent<AudioSource>();
+
         }
-        
         
     }
 }

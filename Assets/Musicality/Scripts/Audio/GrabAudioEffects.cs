@@ -13,10 +13,12 @@ namespace Foundry
         public Color? currentColor = null;
 
         public bool isGrabbed;
+        public bool isReversing;
 
         // What note values will be held by the differnet positions
         public string[] positionNotes = NoteLayouts.APentatonic;
-        static Color[] colors = { new Color(1.0f, 0.0f, 0.0f), new Color(1.0f, 127.0f / 255.0f, 0.0f), new Color(1.0f, 1.0f, 0.0f), new Color(0.0f, 1.0f, 0.0f), new Color(0.0f, 0.0f, 1.0f) };
+        static Color[] colors = { new Color(1.0f, 0.0f, 0.0f), new Color(1.0f, 127.0f / 255.0f, 0.0f), new Color(1.0f, 1.0f, 0.0f), new Color(0.0f, 1.0f, 0.0f), new Color(0.0f, 0.0f, 1.0f), new Color(
+148.0f/255.0f, 0f, 211/255.0f) };
 
         [SerializeField]
         private static float numberOfSections = 5.0f;
@@ -43,31 +45,26 @@ namespace Foundry
             }
         }
 
+        private double triggerTime;
+        private string triggerClip;
+
         void OnCollisionEnter(Collision collision)
         {
             Debug.Log("CollisionEnter");
             if (isGrabbed)
             {
+                Debug.Log("MagnitudeOfCollision is " + collision.relativeVelocity.magnitude);
                 GameObject other = collision.gameObject;
                 if (string.Compare(other.GetComponent<SoundObject>().id, this.GetComponent<SoundObject>().id) < 0)
                 {
                     UpdateCurrentNote();
-                    AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>(), collision);
+                    AudioManager.instance.impactAudio.PlayImpactClip(currentNoteValue, GetComponent<AudioSource>());
                 }
-                
             }
         }
 
-        
-
         public void Grabbed()
         {
-
-            // ev.interactableObject.transform.gameObject.GetComponent<Rigidbody>().detectCollisions = false;
-            // ev.interactableObject.transform.gameObject.SetActive(false);
-            // ev.interactorObject.transform.gameObject.GetComponent<Collider>().isTrigger = true;
-            // ev.interactorObject.transform.gameObject.GetComponent<Rigidbody>().is = false;
-
             Debug.Log("Grabbed");
             isGrabbed = true;
         }

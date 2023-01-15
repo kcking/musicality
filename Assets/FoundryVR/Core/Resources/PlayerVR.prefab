@@ -1951,7 +1951,6 @@ GameObject:
   - component: {fileID: 9068350603271422883}
   - component: {fileID: 3439320223084899464}
   - component: {fileID: 4489956934180565329}
-  - component: {fileID: 6854379274633810524}
   - component: {fileID: 2665276193862569556}
   - component: {fileID: 805175657910980709}
   - component: {fileID: 1081302716777779125}
@@ -2223,7 +2222,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101046762300321831}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
   m_Name: 
@@ -2264,22 +2263,6 @@ MonoBehaviour:
   threshold: 1
   face: {fileID: 0}
   loudness: 0
---- !u!114 &6854379274633810524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101046762300321831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 852dc08f0212a294db2be3b3f6ab7ecd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CameraOffset: {fileID: 2101046764284227329}
-  m_CameraObject: {fileID: 2101046763610048211}
-  m_TrackingOrigin: 1
-  m_CameraYOffset: 1
 --- !u!114 &2665276193862569556
 MonoBehaviour:
   m_ObjectHideFlags: 0

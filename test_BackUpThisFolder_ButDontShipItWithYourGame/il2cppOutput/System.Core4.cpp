@@ -410,11 +410,13 @@ IL2CPP_EXTERN_C String_t* _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8
 IL2CPP_EXTERN_C String_t* _stringLiteral471543834C9A5ADAA79EDD06EDCBA5930B3CB3F4;
 IL2CPP_EXTERN_C String_t* _stringLiteral485C8998D53F77608ABEDAF04A4DBE853A80D357;
 IL2CPP_EXTERN_C String_t* _stringLiteral515679AB29628ECDDDD7FACA99AE118567A911D5;
+IL2CPP_EXTERN_C String_t* _stringLiteral5596617060DC7F3A0694C9F818CB4FB139C9DB41;
 IL2CPP_EXTERN_C String_t* _stringLiteral656DE8865223883D9C605D63606CD7138CF8CAD3;
 IL2CPP_EXTERN_C String_t* _stringLiteral6DC62F421ABC9EEBA3ED23A09F410EA41A1F72C6;
 IL2CPP_EXTERN_C String_t* _stringLiteral82EA3C9AFC08F0CECEBC1B257606B3106346FCAF;
 IL2CPP_EXTERN_C String_t* _stringLiteral84A266738245DD942C30B2FC8963EC80C662B538;
 IL2CPP_EXTERN_C String_t* _stringLiteral8822CE4A43FFFD3B2CC49B9D5FC1B66F0CCBF3B1;
+IL2CPP_EXTERN_C String_t* _stringLiteral9574A4B6B564043556698A1A4CA6B1B0F956859B;
 IL2CPP_EXTERN_C String_t* _stringLiteral99EB84F6AB88027593D943B0B9C498D171778B1B;
 IL2CPP_EXTERN_C String_t* _stringLiteralA1E10561E358BF2699823096E8ABA5826AB9E732;
 IL2CPP_EXTERN_C String_t* _stringLiteralB6E90C09E43FB002DA629508AC300A0750320118;
@@ -423,6 +425,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC00660333703C551EA80371B54D0ADCEB74C33B4
 IL2CPP_EXTERN_C String_t* _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F;
 IL2CPP_EXTERN_C String_t* _stringLiteralCF088CD7CED04705BD5E7559DBB7DD9A14559182;
 IL2CPP_EXTERN_C String_t* _stringLiteralD7A66F857F6E3FCCC482964755DB79017BF35DD2;
+IL2CPP_EXTERN_C String_t* _stringLiteralD8A381FAC6A82F6CE7C4BCCEF92B52F88982603C;
 IL2CPP_EXTERN_C String_t* _stringLiteralDCB7866DEDA66D0DAAD8C519AF9693DB97A9BF28;
 IL2CPP_EXTERN_C String_t* _stringLiteralEDC12722FE0763003109C7EDBACB6977C0E31132;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var;
@@ -448,8 +451,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2__ctor_mC4A18320F103342E740C5
 IL2CPP_EXTERN_C const RuntimeMethod* ReadOnlyCollection_1_get_Count_mF1C20F5D5D5D299F5602DDD1C112D7CDB86D1A8F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReadOnlyCollection_1_get_Item_mD12D51E0F96DDA7734DC44758FA07B0C18B1A502_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReaderWriterLockSlim_Dispose_mA894FFFD0829F6CEDD8318482F57D2A5FCFD5661_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ReaderWriterLockSlim_ExitReadLock_m49891BB1D1FA606B9EBD354D575D7F1ECBD53E87_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReaderWriterLockSlim_ExitUpgradeableReadLock_m70E125A9542852AC8E908571F9EB86670E2CFEEA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReaderWriterLockSlim_ExitWriteLock_m84F7F58C2B3552C5B32744FB06004CACDFCE57E6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ReaderWriterLockSlim_TryEnterReadLockCore_m5756F423F2155A6B414F8C40A249143492E1C3B5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReaderWriterLockSlim_TryEnterUpgradeableReadLockCore_mA84580B68864B07DD3D6A2A4F48FCFE72EEA6F6F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReaderWriterLockSlim_TryEnterWriteLockCore_m18B708E74264AC43BAD623C8ACC92370DA32888B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TimeoutTracker__ctor_mBFE73B99C5BBB93D251DF9731B9C5D824F30CDCE_RuntimeMethod_var;
@@ -718,35 +723,35 @@ struct ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906  : public 
 	// System.Int32 System.Threading.ReaderWriterLockSlim::myLock
 	int32_t ___myLock_1;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::numWriteWaiters
-	uint32_t ___numWriteWaiters_2;
+	uint32_t ___numWriteWaiters_5;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::numReadWaiters
-	uint32_t ___numReadWaiters_3;
+	uint32_t ___numReadWaiters_6;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::numWriteUpgradeWaiters
-	uint32_t ___numWriteUpgradeWaiters_4;
+	uint32_t ___numWriteUpgradeWaiters_7;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::numUpgradeWaiters
-	uint32_t ___numUpgradeWaiters_5;
+	uint32_t ___numUpgradeWaiters_8;
 	// System.Boolean System.Threading.ReaderWriterLockSlim::fNoWaiters
-	bool ___fNoWaiters_6;
+	bool ___fNoWaiters_9;
 	// System.Int32 System.Threading.ReaderWriterLockSlim::upgradeLockOwnerId
-	int32_t ___upgradeLockOwnerId_7;
+	int32_t ___upgradeLockOwnerId_10;
 	// System.Int32 System.Threading.ReaderWriterLockSlim::writeLockOwnerId
-	int32_t ___writeLockOwnerId_8;
+	int32_t ___writeLockOwnerId_11;
 	// System.Threading.EventWaitHandle System.Threading.ReaderWriterLockSlim::writeEvent
-	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___writeEvent_9;
+	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___writeEvent_12;
 	// System.Threading.EventWaitHandle System.Threading.ReaderWriterLockSlim::readEvent
-	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___readEvent_10;
+	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___readEvent_13;
 	// System.Threading.EventWaitHandle System.Threading.ReaderWriterLockSlim::upgradeEvent
-	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___upgradeEvent_11;
+	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___upgradeEvent_14;
 	// System.Threading.EventWaitHandle System.Threading.ReaderWriterLockSlim::waitUpgradeEvent
-	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___waitUpgradeEvent_12;
+	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___waitUpgradeEvent_15;
 	// System.Int64 System.Threading.ReaderWriterLockSlim::lockID
-	int64_t ___lockID_14;
+	int64_t ___lockID_17;
 	// System.Boolean System.Threading.ReaderWriterLockSlim::fUpgradeThreadHoldingRead
-	bool ___fUpgradeThreadHoldingRead_16;
+	bool ___fUpgradeThreadHoldingRead_19;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::owners
-	uint32_t ___owners_17;
+	uint32_t ___owners_21;
 	// System.Boolean System.Threading.ReaderWriterLockSlim::fDisposed
-	bool ___fDisposed_18;
+	bool ___fDisposed_27;
 };
 
 // System.String
@@ -1661,14 +1666,14 @@ struct Expression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785_StaticFields
 struct ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_StaticFields
 {
 	// System.Int64 System.Threading.ReaderWriterLockSlim::s_nextLockID
-	int64_t ___s_nextLockID_13;
+	int64_t ___s_nextLockID_16;
 };
 
 // System.Threading.ReaderWriterLockSlim
 struct ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields
 {
 	// System.Threading.ReaderWriterCount System.Threading.ReaderWriterLockSlim::t_rwc
-	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* ___t_rwc_15;
+	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* ___t_rwc_18;
 };
 
 // System.String
@@ -2890,14 +2895,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Interlocked_Increment_m12CD643CCD5FCD
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_IsRWEntryEmpty_m34743FF639EF9B44D704FC98D3DEA99CFD634E95_inline (ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* ___0_rwc, const RuntimeMethod* method) ;
 // System.Void System.Threading.ReaderWriterCount::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterCount__ctor_m8FE7B774A506545AF710639DB53F7677A2FA658A (ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* __this, const RuntimeMethod* method) ;
-// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterWriteLock(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterWriteLock_mE43F653D65A448225134E0CE1A289C4E112C62A2 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, int32_t ___0_millisecondsTimeout, const RuntimeMethod* method) ;
 // System.Void System.Threading.ReaderWriterLockSlim/TimeoutTracker::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeoutTracker__ctor_mBFE73B99C5BBB93D251DF9731B9C5D824F30CDCE (TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C* __this, int32_t ___0_millisecondsTimeout, const RuntimeMethod* method) ;
-// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterWriteLock(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterWriteLock_mBFFB3599E5D8C30B2D22A876CC58F647AEA2EDAE (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) ;
-// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterWriteLockCore(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterWriteLockCore_m18B708E74264AC43BAD623C8ACC92370DA32888B (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) ;
+// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterReadLock(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterReadLock_m8F3763D7B2516130AD02F7E09AD088C366EF3D11 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) ;
+// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterReadLockCore(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterReadLockCore_m5756F423F2155A6B414F8C40A249143492E1C3B5 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) ;
 // System.Void System.ObjectDisposedException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectDisposedException__ctor_mB2C8582279AF3F0C1CF9AA52DA7331BF848DFD48 (ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB* __this, String_t* ___0_objectName, const RuntimeMethod* method) ;
 // System.Threading.Thread System.Threading.Thread::get_CurrentThread()
@@ -2914,22 +2917,28 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_EnterMy
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, bool ___0_dontAllocate, const RuntimeMethod* method) ;
 // System.Void System.Threading.ReaderWriterLockSlim::ExitMyLock()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Threading.ReaderWriterLockSlim/TimeoutTracker::get_IsExpired()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeoutTracker_get_IsExpired_m5E08DCC01117EF66ADEBA5472B27833577289813 (TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C* __this, const RuntimeMethod* method) ;
+// System.Void System.Threading.ReaderWriterLockSlim::SpinWait(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SpinWait_mFFFC84F8CF5AA3863BEE5CD292FE63B335A5D11B (int32_t ___0_SpinCount, const RuntimeMethod* method) ;
+// System.Boolean System.Threading.ReaderWriterLockSlim::IsRwHashEntryChanged(System.Threading.ReaderWriterCount)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_IsRwHashEntryChanged_mCCC27B0221422991C4F5A2CE35263EBC24CB8402 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* ___0_lrwc, const RuntimeMethod* method) ;
+// System.Void System.Threading.ReaderWriterLockSlim::LazyCreateEvent(System.Threading.EventWaitHandle&,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_LazyCreateEvent_m4D2DFCB1AD5A749408939AA0D12B7C3959A36923 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** ___0_waitEvent, bool ___1_makeAutoResetEvent, const RuntimeMethod* method) ;
+// System.Boolean System.Threading.ReaderWriterLockSlim::WaitOnEvent(System.Threading.EventWaitHandle,System.UInt32&,System.Threading.ReaderWriterLockSlim/TimeoutTracker,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_WaitOnEvent_mFF3B7C48254F2742AED6916DD059ACB2240A78B3 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___0_waitEvent, uint32_t* ___1_numWaiters, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___2_timeout, bool ___3_isWriteWaiter, const RuntimeMethod* method) ;
+// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterWriteLock(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterWriteLock_mE43F653D65A448225134E0CE1A289C4E112C62A2 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, int32_t ___0_millisecondsTimeout, const RuntimeMethod* method) ;
+// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterWriteLock(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterWriteLock_mBFFB3599E5D8C30B2D22A876CC58F647AEA2EDAE (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) ;
+// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterWriteLockCore(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterWriteLockCore_m18B708E74264AC43BAD623C8ACC92370DA32888B (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) ;
 // System.Boolean System.Threading.ReaderWriterLockSlim::IsWriterAcquired()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_IsWriterAcquired_m6D1FB82F2349C4B48345C9EBEFFCC3FA69EF5A76 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) ;
 // System.Void System.Threading.ReaderWriterLockSlim::SetWriterAcquired()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SetWriterAcquired_mE496DF38D30454011343EE638FAC1EF2B5E8319C (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) ;
 // System.UInt32 System.Threading.ReaderWriterLockSlim::GetNumReaders()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t ReaderWriterLockSlim_GetNumReaders_m300EBD28D2300167E37C0F67AD04AF7BE87C1DB1 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) ;
-// System.Boolean System.Threading.ReaderWriterLockSlim::IsRwHashEntryChanged(System.Threading.ReaderWriterCount)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_IsRwHashEntryChanged_mCCC27B0221422991C4F5A2CE35263EBC24CB8402 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* ___0_lrwc, const RuntimeMethod* method) ;
-// System.Boolean System.Threading.ReaderWriterLockSlim/TimeoutTracker::get_IsExpired()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeoutTracker_get_IsExpired_m5E08DCC01117EF66ADEBA5472B27833577289813 (TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C* __this, const RuntimeMethod* method) ;
-// System.Void System.Threading.ReaderWriterLockSlim::SpinWait(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SpinWait_mFFFC84F8CF5AA3863BEE5CD292FE63B335A5D11B (int32_t ___0_SpinCount, const RuntimeMethod* method) ;
-// System.Void System.Threading.ReaderWriterLockSlim::LazyCreateEvent(System.Threading.EventWaitHandle&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_LazyCreateEvent_m4D2DFCB1AD5A749408939AA0D12B7C3959A36923 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** ___0_waitEvent, bool ___1_makeAutoResetEvent, const RuntimeMethod* method) ;
-// System.Boolean System.Threading.ReaderWriterLockSlim::WaitOnEvent(System.Threading.EventWaitHandle,System.UInt32&,System.Threading.ReaderWriterLockSlim/TimeoutTracker,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_WaitOnEvent_mFF3B7C48254F2742AED6916DD059ACB2240A78B3 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___0_waitEvent, uint32_t* ___1_numWaiters, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___2_timeout, bool ___3_isWriteWaiter, const RuntimeMethod* method) ;
 // System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterUpgradeableReadLock(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterUpgradeableReadLock_m8D1AC20D086B7CD5019836984BCE18635DEB34DF (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, int32_t ___0_millisecondsTimeout, const RuntimeMethod* method) ;
 // System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterUpgradeableReadLock(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
@@ -2938,10 +2947,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterUpgradeable
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterUpgradeableReadLockCore_mA84580B68864B07DD3D6A2A4F48FCFE72EEA6F6F (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) ;
 // System.Void System.Threading.SynchronizationLockException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SynchronizationLockException__ctor_m2AEF9CF8E5DFE8F5A7CFB02E5AEF7640971BA970 (SynchronizationLockException_t02C1BC0B121660E0A099F3056637509F56EF2F34* __this, String_t* ___0_message, const RuntimeMethod* method) ;
-// System.Void System.Threading.ReaderWriterLockSlim::ClearWriterAcquired()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ClearWriterAcquired_mBCDFD72656A5D8EFCEE5A0AD39233D37E44461DC (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) ;
 // System.Void System.Threading.ReaderWriterLockSlim::ExitAndWakeUpAppropriateWaiters()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitAndWakeUpAppropriateWaiters_m43EB7B2724EC44E2F0B4E3CA6A51752345978E90 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) ;
+// System.Void System.Threading.ReaderWriterLockSlim::ClearWriterAcquired()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ClearWriterAcquired_mBCDFD72656A5D8EFCEE5A0AD39233D37E44461DC (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) ;
 // System.Void System.Threading.AutoResetEvent::.ctor(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetEvent__ctor_mB7C8CD30C5BE11A2C8DB79B27593CF0C5FE82ADE (AutoResetEvent_t7F792F3F7AD11BEF7B411E771D98E5266A8CE7C0* __this, bool ___0_initialState, const RuntimeMethod* method) ;
 // System.Void System.Threading.ManualResetEvent::.ctor(System.Boolean)
@@ -11138,8 +11147,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterCount__ctor_m8FE7B774A506545
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_InitializeThreadCounts_m7A12BC0D8F0D8C70EC8CA19F435EEEDAE5475A41 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		__this->___upgradeLockOwnerId_7 = (-1);
-		__this->___writeLockOwnerId_8 = (-1);
+		__this->___upgradeLockOwnerId_10 = (-1);
+		__this->___writeLockOwnerId_11 = (-1);
 		return;
 	}
 }
@@ -11175,10 +11184,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim__ctor_m19E2A503BBF4
 IL_0011:
 	{
 		ReaderWriterLockSlim_InitializeThreadCounts_m7A12BC0D8F0D8C70EC8CA19F435EEEDAE5475A41(__this, NULL);
-		__this->___fNoWaiters_6 = (bool)1;
+		__this->___fNoWaiters_9 = (bool)1;
 		int64_t L_1;
-		L_1 = Interlocked_Increment_m12CD643CCD5FCDE95DBC0AB07D09AF696E26F9C0((&((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_StaticFields*)il2cpp_codegen_static_fields_for(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___s_nextLockID_13), NULL);
-		__this->___lockID_14 = L_1;
+		L_1 = Interlocked_Increment_m12CD643CCD5FCDE95DBC0AB07D09AF696E26F9C0((&((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_StaticFields*)il2cpp_codegen_static_fields_for(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___s_nextLockID_16), NULL);
+		__this->___lockID_17 = L_1;
 		return;
 	}
 }
@@ -11242,7 +11251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_IsRwHashEntryChange
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_0 = ___0_lrwc;
 		NullCheck(L_0);
 		int64_t L_1 = L_0->___lockID_0;
-		int64_t L_2 = __this->___lockID_14;
+		int64_t L_2 = __this->___lockID_17;
 		return (bool)((((int32_t)((((int64_t)L_1) == ((int64_t)L_2))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
@@ -11259,7 +11268,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReaderWriterCount_tD7361BF31DEB70DC7319519D21
 	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* V_0 = NULL;
 	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* V_1 = NULL;
 	{
-		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_0 = ((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_15;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_0 = ((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_18;
 		V_0 = L_0;
 		V_1 = (ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333*)NULL;
 		goto IL_0031;
@@ -11270,7 +11279,7 @@ IL_000a:
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_1 = V_0;
 		NullCheck(L_1);
 		int64_t L_2 = L_1->___lockID_0;
-		int64_t L_3 = __this->___lockID_14;
+		int64_t L_3 = __this->___lockID_17;
 		if ((!(((uint64_t)L_2) == ((uint64_t)L_3))))
 		{
 			goto IL_001a;
@@ -11351,23 +11360,352 @@ IL_0039:
 		ReaderWriterCount__ctor_m8FE7B774A506545AF710639DB53F7677A2FA658A(L_15, NULL);
 		V_1 = L_15;
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_16 = V_1;
-		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_17 = ((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_15;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_17 = ((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_18;
 		NullCheck(L_16);
 		L_16->___next_4 = L_17;
 		Il2CppCodeGenWriteBarrier((void**)(&L_16->___next_4), (void*)L_17);
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_18 = V_1;
-		((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_15 = L_18;
-		Il2CppCodeGenWriteBarrier((void**)(&((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_15), (void*)L_18);
+		((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_18 = L_18;
+		Il2CppCodeGenWriteBarrier((void**)(&((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_18), (void*)L_18);
 	}
 
 IL_0053:
 	{
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_19 = V_1;
-		int64_t L_20 = __this->___lockID_14;
+		int64_t L_20 = __this->___lockID_17;
 		NullCheck(L_19);
 		L_19->___lockID_0 = L_20;
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_21 = V_1;
 		return L_21;
+	}
+}
+// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterReadLock(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterReadLock_m5CB81D34821FE3C460F14CB964434C6A23F4E6EA (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, int32_t ___0_millisecondsTimeout, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_millisecondsTimeout;
+		TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		TimeoutTracker__ctor_mBFE73B99C5BBB93D251DF9731B9C5D824F30CDCE((&L_1), L_0, /*hidden argument*/NULL);
+		bool L_2;
+		L_2 = ReaderWriterLockSlim_TryEnterReadLock_m8F3763D7B2516130AD02F7E09AD088C366EF3D11(__this, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterReadLock(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterReadLock_m8F3763D7B2516130AD02F7E09AD088C366EF3D11 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) 
+{
+	{
+		TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C L_0 = ___0_timeout;
+		bool L_1;
+		L_1 = ReaderWriterLockSlim_TryEnterReadLockCore_m5756F423F2155A6B414F8C40A249143492E1C3B5(__this, L_0, NULL);
+		return L_1;
+	}
+}
+// System.Boolean System.Threading.ReaderWriterLockSlim::TryEnterReadLockCore(System.Threading.ReaderWriterLockSlim/TimeoutTracker)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterReadLockCore_m5756F423F2155A6B414F8C40A249143492E1C3B5 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C ___0_timeout, const RuntimeMethod* method) 
+{
+	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* V_0 = NULL;
+	int32_t V_1 = 0;
+	bool V_2 = false;
+	int32_t V_3 = 0;
+	{
+		bool L_0 = __this->___fDisposed_27;
+		if (!L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB* L_1 = (ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		ObjectDisposedException__ctor_mB2C8582279AF3F0C1CF9AA52DA7331BF848DFD48(L_1, (String_t*)NULL, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReaderWriterLockSlim_TryEnterReadLockCore_m5756F423F2155A6B414F8C40A249143492E1C3B5_RuntimeMethod_var)));
+	}
+
+IL_000f:
+	{
+		V_0 = (ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333*)NULL;
+		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_2;
+		L_2 = Thread_get_CurrentThread_m6D4719F4993DB9200490531FF02D4076FF9CA9BD(NULL);
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = Thread_get_ManagedThreadId_m74ACB74A574EE535C2B00B7D64F203A62E796B05(L_2, NULL);
+		V_1 = L_3;
+		bool L_4 = __this->___fIsReentrant_0;
+		if (L_4)
+		{
+			goto IL_009a;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		int32_t L_6 = __this->___writeLockOwnerId_11;
+		if ((!(((uint32_t)L_5) == ((uint32_t)L_6))))
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		String_t* L_7;
+		L_7 = SR_GetString_m2213C501E26D6A1AE8D0644E9685AF8A4204CA7F(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralD8A381FAC6A82F6CE7C4BCCEF92B52F88982603C)), NULL);
+		LockRecursionException_t13E66FBCBE64DE379F78D70C0596C0CCF65E9496* L_8 = (LockRecursionException_t13E66FBCBE64DE379F78D70C0596C0CCF65E9496*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&LockRecursionException_t13E66FBCBE64DE379F78D70C0596C0CCF65E9496_il2cpp_TypeInfo_var)));
+		NullCheck(L_8);
+		LockRecursionException__ctor_mCC42F0B1F378BC1F03AD51ABA4438BB5807F742B(L_8, L_7, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_8, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReaderWriterLockSlim_TryEnterReadLockCore_m5756F423F2155A6B414F8C40A249143492E1C3B5_RuntimeMethod_var)));
+	}
+
+IL_003d:
+	{
+		ReaderWriterLockSlim_EnterMyLock_mDB590C9A0A55830B1C347DAB0A3F4972E9F0DE59_inline(__this, NULL);
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_9;
+		L_9 = ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline(__this, (bool)0, NULL);
+		V_0 = L_9;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_10 = V_0;
+		NullCheck(L_10);
+		int32_t L_11 = L_10->___readercount_1;
+		if ((((int32_t)L_11) <= ((int32_t)0)))
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		String_t* L_12;
+		L_12 = SR_GetString_m2213C501E26D6A1AE8D0644E9685AF8A4204CA7F(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5596617060DC7F3A0694C9F818CB4FB139C9DB41)), NULL);
+		LockRecursionException_t13E66FBCBE64DE379F78D70C0596C0CCF65E9496* L_13 = (LockRecursionException_t13E66FBCBE64DE379F78D70C0596C0CCF65E9496*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&LockRecursionException_t13E66FBCBE64DE379F78D70C0596C0CCF65E9496_il2cpp_TypeInfo_var)));
+		NullCheck(L_13);
+		LockRecursionException__ctor_mCC42F0B1F378BC1F03AD51ABA4438BB5807F742B(L_13, L_12, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_13, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReaderWriterLockSlim_TryEnterReadLockCore_m5756F423F2155A6B414F8C40A249143492E1C3B5_RuntimeMethod_var)));
+	}
+
+IL_006a:
+	{
+		int32_t L_14 = V_1;
+		int32_t L_15 = __this->___upgradeLockOwnerId_10;
+		if ((!(((uint32_t)L_14) == ((uint32_t)L_15))))
+		{
+			goto IL_0128;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_16 = V_0;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_17 = L_16;
+		NullCheck(L_17);
+		int32_t L_18 = L_17->___readercount_1;
+		NullCheck(L_17);
+		L_17->___readercount_1 = ((int32_t)il2cpp_codegen_add(L_18, 1));
+		uint32_t L_19 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)il2cpp_codegen_add((int32_t)L_19, 1));
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		return (bool)1;
+	}
+
+IL_009a:
+	{
+		ReaderWriterLockSlim_EnterMyLock_mDB590C9A0A55830B1C347DAB0A3F4972E9F0DE59_inline(__this, NULL);
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_20;
+		L_20 = ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline(__this, (bool)0, NULL);
+		V_0 = L_20;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_21 = V_0;
+		NullCheck(L_21);
+		int32_t L_22 = L_21->___readercount_1;
+		if ((((int32_t)L_22) <= ((int32_t)0)))
+		{
+			goto IL_00c7;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_23 = V_0;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_24 = L_23;
+		NullCheck(L_24);
+		int32_t L_25 = L_24->___readercount_1;
+		NullCheck(L_24);
+		L_24->___readercount_1 = ((int32_t)il2cpp_codegen_add(L_25, 1));
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		return (bool)1;
+	}
+
+IL_00c7:
+	{
+		int32_t L_26 = V_1;
+		int32_t L_27 = __this->___upgradeLockOwnerId_10;
+		if ((!(((uint32_t)L_26) == ((uint32_t)L_27))))
+		{
+			goto IL_00fb;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_28 = V_0;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_29 = L_28;
+		NullCheck(L_29);
+		int32_t L_30 = L_29->___readercount_1;
+		NullCheck(L_29);
+		L_29->___readercount_1 = ((int32_t)il2cpp_codegen_add(L_30, 1));
+		uint32_t L_31 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)il2cpp_codegen_add((int32_t)L_31, 1));
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		__this->___fUpgradeThreadHoldingRead_19 = (bool)1;
+		return (bool)1;
+	}
+
+IL_00fb:
+	{
+		int32_t L_32 = V_1;
+		int32_t L_33 = __this->___writeLockOwnerId_11;
+		if ((!(((uint32_t)L_32) == ((uint32_t)L_33))))
+		{
+			goto IL_0128;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_34 = V_0;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_35 = L_34;
+		NullCheck(L_35);
+		int32_t L_36 = L_35->___readercount_1;
+		NullCheck(L_35);
+		L_35->___readercount_1 = ((int32_t)il2cpp_codegen_add(L_36, 1));
+		uint32_t L_37 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)il2cpp_codegen_add((int32_t)L_37, 1));
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		return (bool)1;
+	}
+
+IL_0128:
+	{
+		V_2 = (bool)1;
+		V_3 = 0;
+	}
+
+IL_012c:
+	{
+		uint32_t L_38 = __this->___owners_21;
+		if ((!(((uint32_t)L_38) < ((uint32_t)((int32_t)268435454)))))
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		uint32_t L_39 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)il2cpp_codegen_add((int32_t)L_39, 1));
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_40 = V_0;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_41 = L_40;
+		NullCheck(L_41);
+		int32_t L_42 = L_41->___readercount_1;
+		NullCheck(L_41);
+		L_41->___readercount_1 = ((int32_t)il2cpp_codegen_add(L_42, 1));
+		goto IL_01f4;
+	}
+
+IL_015a:
+	{
+		int32_t L_43 = V_3;
+		if ((((int32_t)L_43) >= ((int32_t)((int32_t)20))))
+		{
+			goto IL_0193;
+		}
+	}
+	{
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		bool L_44;
+		L_44 = TimeoutTracker_get_IsExpired_m5E08DCC01117EF66ADEBA5472B27833577289813((&___0_timeout), NULL);
+		if (!L_44)
+		{
+			goto IL_0170;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0170:
+	{
+		int32_t L_45 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_45, 1));
+		int32_t L_46 = V_3;
+		ReaderWriterLockSlim_SpinWait_mFFFC84F8CF5AA3863BEE5CD292FE63B335A5D11B(L_46, NULL);
+		ReaderWriterLockSlim_EnterMyLock_mDB590C9A0A55830B1C347DAB0A3F4972E9F0DE59_inline(__this, NULL);
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_47 = V_0;
+		bool L_48;
+		L_48 = ReaderWriterLockSlim_IsRwHashEntryChanged_mCCC27B0221422991C4F5A2CE35263EBC24CB8402(__this, L_47, NULL);
+		if (!L_48)
+		{
+			goto IL_012c;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_49;
+		L_49 = ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline(__this, (bool)0, NULL);
+		V_0 = L_49;
+		goto IL_012c;
+	}
+
+IL_0193:
+	{
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_50 = __this->___readEvent_13;
+		if (L_50)
+		{
+			goto IL_01c1;
+		}
+	}
+	{
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** L_51 = (&__this->___readEvent_13);
+		ReaderWriterLockSlim_LazyCreateEvent_m4D2DFCB1AD5A749408939AA0D12B7C3959A36923(__this, L_51, (bool)0, NULL);
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_52 = V_0;
+		bool L_53;
+		L_53 = ReaderWriterLockSlim_IsRwHashEntryChanged_mCCC27B0221422991C4F5A2CE35263EBC24CB8402(__this, L_52, NULL);
+		if (!L_53)
+		{
+			goto IL_012c;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_54;
+		L_54 = ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline(__this, (bool)0, NULL);
+		V_0 = L_54;
+		goto IL_012c;
+	}
+
+IL_01c1:
+	{
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_55 = __this->___readEvent_13;
+		uint32_t* L_56 = (&__this->___numReadWaiters_6);
+		TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C L_57 = ___0_timeout;
+		bool L_58;
+		L_58 = ReaderWriterLockSlim_WaitOnEvent_mFF3B7C48254F2742AED6916DD059ACB2240A78B3(__this, L_55, L_56, L_57, (bool)0, NULL);
+		V_2 = L_58;
+		bool L_59 = V_2;
+		if (L_59)
+		{
+			goto IL_01db;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_01db:
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_60 = V_0;
+		bool L_61;
+		L_61 = ReaderWriterLockSlim_IsRwHashEntryChanged_mCCC27B0221422991C4F5A2CE35263EBC24CB8402(__this, L_60, NULL);
+		if (!L_61)
+		{
+			goto IL_012c;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_62;
+		L_62 = ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline(__this, (bool)0, NULL);
+		V_0 = L_62;
+		goto IL_012c;
+	}
+
+IL_01f4:
+	{
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		bool L_63 = V_2;
+		return L_63;
 	}
 }
 // System.Void System.Threading.ReaderWriterLockSlim::EnterWriteLock()
@@ -11411,7 +11749,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterWriteLockCo
 	int32_t V_3 = 0;
 	uint32_t V_4 = 0;
 	{
-		bool L_0 = __this->___fDisposed_18;
+		bool L_0 = __this->___fDisposed_27;
 		if (!L_0)
 		{
 			goto IL_000f;
@@ -11441,7 +11779,7 @@ IL_000f:
 	}
 	{
 		int32_t L_5 = V_0;
-		int32_t L_6 = __this->___writeLockOwnerId_8;
+		int32_t L_6 = __this->___writeLockOwnerId_11;
 		if ((!(((uint32_t)L_5) == ((uint32_t)L_6))))
 		{
 			goto IL_003d;
@@ -11459,7 +11797,7 @@ IL_000f:
 IL_003d:
 	{
 		int32_t L_9 = V_0;
-		int32_t L_10 = __this->___upgradeLockOwnerId_7;
+		int32_t L_10 = __this->___upgradeLockOwnerId_10;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
 		{
 			goto IL_0048;
@@ -11507,7 +11845,7 @@ IL_0078:
 		L_17 = ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline(__this, (bool)0, NULL);
 		V_1 = L_17;
 		int32_t L_18 = V_0;
-		int32_t L_19 = __this->___writeLockOwnerId_8;
+		int32_t L_19 = __this->___writeLockOwnerId_11;
 		if ((!(((uint32_t)L_18) == ((uint32_t)L_19))))
 		{
 			goto IL_00a5;
@@ -11527,7 +11865,7 @@ IL_0078:
 IL_00a5:
 	{
 		int32_t L_23 = V_0;
-		int32_t L_24 = __this->___upgradeLockOwnerId_7;
+		int32_t L_24 = __this->___upgradeLockOwnerId_10;
 		if ((!(((uint32_t)L_23) == ((uint32_t)L_24))))
 		{
 			goto IL_00b2;
@@ -11685,22 +12023,22 @@ IL_0159:
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_45 = __this->___waitUpgradeEvent_12;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_45 = __this->___waitUpgradeEvent_15;
 		if (L_45)
 		{
 			goto IL_0176;
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** L_46 = (&__this->___waitUpgradeEvent_12);
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** L_46 = (&__this->___waitUpgradeEvent_15);
 		ReaderWriterLockSlim_LazyCreateEvent_m4D2DFCB1AD5A749408939AA0D12B7C3959A36923(__this, L_46, (bool)1, NULL);
 		goto IL_00d3;
 	}
 
 IL_0176:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_47 = __this->___waitUpgradeEvent_12;
-		uint32_t* L_48 = (&__this->___numWriteUpgradeWaiters_4);
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_47 = __this->___waitUpgradeEvent_15;
+		uint32_t* L_48 = (&__this->___numWriteUpgradeWaiters_7);
 		TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C L_49 = ___0_timeout;
 		bool L_50;
 		L_50 = ReaderWriterLockSlim_WaitOnEvent_mFF3B7C48254F2742AED6916DD059ACB2240A78B3(__this, L_47, L_48, L_49, (bool)1, NULL);
@@ -11715,22 +12053,22 @@ IL_0176:
 
 IL_0191:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_51 = __this->___writeEvent_9;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_51 = __this->___writeEvent_12;
 		if (L_51)
 		{
 			goto IL_01ab;
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** L_52 = (&__this->___writeEvent_9);
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** L_52 = (&__this->___writeEvent_12);
 		ReaderWriterLockSlim_LazyCreateEvent_m4D2DFCB1AD5A749408939AA0D12B7C3959A36923(__this, L_52, (bool)1, NULL);
 		goto IL_00d3;
 	}
 
 IL_01ab:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_53 = __this->___writeEvent_9;
-		uint32_t* L_54 = (&__this->___numWriteWaiters_2);
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_53 = __this->___writeEvent_12;
+		uint32_t* L_54 = (&__this->___numWriteWaiters_5);
 		TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C L_55 = ___0_timeout;
 		bool L_56;
 		L_56 = ReaderWriterLockSlim_WaitOnEvent_mFF3B7C48254F2742AED6916DD059ACB2240A78B3(__this, L_53, L_54, L_55, (bool)1, NULL);
@@ -11780,7 +12118,7 @@ IL_01ed:
 	{
 		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
 		int32_t L_64 = V_0;
-		__this->___writeLockOwnerId_8 = L_64;
+		__this->___writeLockOwnerId_11 = L_64;
 		return (bool)1;
 	}
 }
@@ -11823,7 +12161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_TryEnterUpgradeable
 	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* V_1 = NULL;
 	int32_t V_2 = 0;
 	{
-		bool L_0 = __this->___fDisposed_18;
+		bool L_0 = __this->___fDisposed_27;
 		if (!L_0)
 		{
 			goto IL_000f;
@@ -11852,7 +12190,7 @@ IL_000f:
 	}
 	{
 		int32_t L_5 = V_0;
-		int32_t L_6 = __this->___upgradeLockOwnerId_7;
+		int32_t L_6 = __this->___upgradeLockOwnerId_10;
 		if ((!(((uint32_t)L_5) == ((uint32_t)L_6))))
 		{
 			goto IL_003b;
@@ -11870,7 +12208,7 @@ IL_000f:
 IL_003b:
 	{
 		int32_t L_9 = V_0;
-		int32_t L_10 = __this->___writeLockOwnerId_8;
+		int32_t L_10 = __this->___writeLockOwnerId_11;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
 		{
 			goto IL_0054;
@@ -11923,7 +12261,7 @@ IL_008a:
 		L_19 = ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline(__this, (bool)0, NULL);
 		V_1 = L_19;
 		int32_t L_20 = V_0;
-		int32_t L_21 = __this->___upgradeLockOwnerId_7;
+		int32_t L_21 = __this->___upgradeLockOwnerId_10;
 		if ((!(((uint32_t)L_20) == ((uint32_t)L_21))))
 		{
 			goto IL_00b7;
@@ -11943,17 +12281,17 @@ IL_008a:
 IL_00b7:
 	{
 		int32_t L_25 = V_0;
-		int32_t L_26 = __this->___writeLockOwnerId_8;
+		int32_t L_26 = __this->___writeLockOwnerId_11;
 		if ((!(((uint32_t)L_25) == ((uint32_t)L_26))))
 		{
 			goto IL_00fb;
 		}
 	}
 	{
-		uint32_t L_27 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)il2cpp_codegen_add((int32_t)L_27, 1));
+		uint32_t L_27 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)il2cpp_codegen_add((int32_t)L_27, 1));
 		int32_t L_28 = V_0;
-		__this->___upgradeLockOwnerId_7 = L_28;
+		__this->___upgradeLockOwnerId_10 = L_28;
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_29 = V_1;
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_30 = L_29;
 		NullCheck(L_30);
@@ -11969,7 +12307,7 @@ IL_00b7:
 		}
 	}
 	{
-		__this->___fUpgradeThreadHoldingRead_16 = (bool)1;
+		__this->___fUpgradeThreadHoldingRead_19 = (bool)1;
 	}
 
 IL_00f3:
@@ -12005,24 +12343,24 @@ IL_011a:
 
 IL_011c:
 	{
-		int32_t L_38 = __this->___upgradeLockOwnerId_7;
+		int32_t L_38 = __this->___upgradeLockOwnerId_10;
 		if ((!(((uint32_t)L_38) == ((uint32_t)(-1)))))
 		{
 			goto IL_0149;
 		}
 	}
 	{
-		uint32_t L_39 = __this->___owners_17;
+		uint32_t L_39 = __this->___owners_21;
 		if ((!(((uint32_t)L_39) < ((uint32_t)((int32_t)268435454)))))
 		{
 			goto IL_0149;
 		}
 	}
 	{
-		uint32_t L_40 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)il2cpp_codegen_add((int32_t)L_40, 1));
+		uint32_t L_40 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)il2cpp_codegen_add((int32_t)L_40, 1));
 		int32_t L_41 = V_0;
-		__this->___upgradeLockOwnerId_7 = L_41;
+		__this->___upgradeLockOwnerId_10 = L_41;
 		goto IL_01a3;
 	}
 
@@ -12059,22 +12397,22 @@ IL_015f:
 
 IL_0171:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_46 = __this->___upgradeEvent_11;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_46 = __this->___upgradeEvent_14;
 		if (L_46)
 		{
 			goto IL_0188;
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** L_47 = (&__this->___upgradeEvent_11);
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E** L_47 = (&__this->___upgradeEvent_14);
 		ReaderWriterLockSlim_LazyCreateEvent_m4D2DFCB1AD5A749408939AA0D12B7C3959A36923(__this, L_47, (bool)1, NULL);
 		goto IL_011c;
 	}
 
 IL_0188:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_48 = __this->___upgradeEvent_11;
-		uint32_t* L_49 = (&__this->___numUpgradeWaiters_5);
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_48 = __this->___upgradeEvent_14;
+		uint32_t* L_49 = (&__this->___numUpgradeWaiters_8);
 		TimeoutTracker_tF7165D38C7B863F71E6B60DF267C8DDE0D76299C L_50 = ___0_timeout;
 		bool L_51;
 		L_51 = ReaderWriterLockSlim_WaitOnEvent_mFF3B7C48254F2742AED6916DD059ACB2240A78B3(__this, L_48, L_49, L_50, (bool)0, NULL);
@@ -12126,6 +12464,102 @@ IL_01ca:
 		return (bool)1;
 	}
 }
+// System.Void System.Threading.ReaderWriterLockSlim::ExitReadLock()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitReadLock_m49891BB1D1FA606B9EBD354D575D7F1ECBD53E87 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
+{
+	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* V_0 = NULL;
+	{
+		V_0 = (ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333*)NULL;
+		ReaderWriterLockSlim_EnterMyLock_mDB590C9A0A55830B1C347DAB0A3F4972E9F0DE59_inline(__this, NULL);
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_0;
+		L_0 = ReaderWriterLockSlim_GetThreadRWCount_m693F7FFBBFB98DEF312E4B3A200DA95266CA4E96_inline(__this, (bool)1, NULL);
+		V_0 = L_0;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_2 = V_0;
+		NullCheck(L_2);
+		int32_t L_3 = L_2->___readercount_1;
+		if ((((int32_t)L_3) >= ((int32_t)1)))
+		{
+			goto IL_0032;
+		}
+	}
+
+IL_001c:
+	{
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		String_t* L_4;
+		L_4 = SR_GetString_m2213C501E26D6A1AE8D0644E9685AF8A4204CA7F(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral9574A4B6B564043556698A1A4CA6B1B0F956859B)), NULL);
+		SynchronizationLockException_t02C1BC0B121660E0A099F3056637509F56EF2F34* L_5 = (SynchronizationLockException_t02C1BC0B121660E0A099F3056637509F56EF2F34*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SynchronizationLockException_t02C1BC0B121660E0A099F3056637509F56EF2F34_il2cpp_TypeInfo_var)));
+		NullCheck(L_5);
+		SynchronizationLockException__ctor_m2AEF9CF8E5DFE8F5A7CFB02E5AEF7640971BA970(L_5, L_4, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReaderWriterLockSlim_ExitReadLock_m49891BB1D1FA606B9EBD354D575D7F1ECBD53E87_RuntimeMethod_var)));
+	}
+
+IL_0032:
+	{
+		bool L_6 = __this->___fIsReentrant_0;
+		if (!L_6)
+		{
+			goto IL_0071;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_7 = V_0;
+		NullCheck(L_7);
+		int32_t L_8 = L_7->___readercount_1;
+		if ((((int32_t)L_8) <= ((int32_t)1)))
+		{
+			goto IL_0058;
+		}
+	}
+	{
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_9 = V_0;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_10 = L_9;
+		NullCheck(L_10);
+		int32_t L_11 = L_10->___readercount_1;
+		NullCheck(L_10);
+		L_10->___readercount_1 = ((int32_t)il2cpp_codegen_subtract(L_11, 1));
+		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
+		return;
+	}
+
+IL_0058:
+	{
+		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_12;
+		L_12 = Thread_get_CurrentThread_m6D4719F4993DB9200490531FF02D4076FF9CA9BD(NULL);
+		NullCheck(L_12);
+		int32_t L_13;
+		L_13 = Thread_get_ManagedThreadId_m74ACB74A574EE535C2B00B7D64F203A62E796B05(L_12, NULL);
+		int32_t L_14 = __this->___upgradeLockOwnerId_10;
+		if ((!(((uint32_t)L_13) == ((uint32_t)L_14))))
+		{
+			goto IL_0071;
+		}
+	}
+	{
+		__this->___fUpgradeThreadHoldingRead_19 = (bool)0;
+	}
+
+IL_0071:
+	{
+		uint32_t L_15 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_15, 1));
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_16 = V_0;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_17 = L_16;
+		NullCheck(L_17);
+		int32_t L_18 = L_17->___readercount_1;
+		NullCheck(L_17);
+		L_17->___readercount_1 = ((int32_t)il2cpp_codegen_subtract(L_18, 1));
+		ReaderWriterLockSlim_ExitAndWakeUpAppropriateWaiters_m43EB7B2724EC44E2F0B4E3CA6A51752345978E90(__this, NULL);
+		return;
+	}
+}
 // System.Void System.Threading.ReaderWriterLockSlim::ExitWriteLock()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitWriteLock_m84F7F58C2B3552C5B32744FB06004CACDFCE57E6 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
@@ -12146,7 +12580,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitWriteLock_m84F7
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Thread_get_ManagedThreadId_m74ACB74A574EE535C2B00B7D64F203A62E796B05(L_1, NULL);
-		int32_t L_3 = __this->___writeLockOwnerId_8;
+		int32_t L_3 = __this->___writeLockOwnerId_11;
 		if ((((int32_t)L_2) == ((int32_t)L_3)))
 		{
 			goto IL_002a;
@@ -12235,7 +12669,7 @@ IL_0077:
 IL_0094:
 	{
 		ReaderWriterLockSlim_ClearWriterAcquired_mBCDFD72656A5D8EFCEE5A0AD39233D37E44461DC(__this, NULL);
-		__this->___writeLockOwnerId_8 = (-1);
+		__this->___writeLockOwnerId_11 = (-1);
 		ReaderWriterLockSlim_ExitAndWakeUpAppropriateWaiters_m43EB7B2724EC44E2F0B4E3CA6A51752345978E90(__this, NULL);
 		return;
 	}
@@ -12260,7 +12694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitUpgradeableRead
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Thread_get_ManagedThreadId_m74ACB74A574EE535C2B00B7D64F203A62E796B05(L_1, NULL);
-		int32_t L_3 = __this->___upgradeLockOwnerId_7;
+		int32_t L_3 = __this->___upgradeLockOwnerId_10;
 		if ((((int32_t)L_2) == ((int32_t)L_3)))
 		{
 			goto IL_002a;
@@ -12348,14 +12782,14 @@ IL_0077:
 
 IL_0094:
 	{
-		__this->___fUpgradeThreadHoldingRead_16 = (bool)0;
+		__this->___fUpgradeThreadHoldingRead_19 = (bool)0;
 	}
 
 IL_009b:
 	{
-		uint32_t L_18 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_18, 1));
-		__this->___upgradeLockOwnerId_7 = (-1);
+		uint32_t L_18 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_18, 1));
+		__this->___upgradeLockOwnerId_10 = (-1);
 		ReaderWriterLockSlim_ExitAndWakeUpAppropriateWaiters_m43EB7B2724EC44E2F0B4E3CA6A51752345978E90(__this, NULL);
 		return;
 	}
@@ -12434,8 +12868,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_WaitOnEvent_mFF3B7C
 		uint32_t* L_3 = ___1_numWaiters;
 		int32_t L_4 = *((uint32_t*)L_3);
 		*((int32_t*)L_2) = (int32_t)((int32_t)il2cpp_codegen_add(L_4, 1));
-		__this->___fNoWaiters_6 = (bool)0;
-		uint32_t L_5 = __this->___numWriteWaiters_2;
+		__this->___fNoWaiters_9 = (bool)0;
+		uint32_t L_5 = __this->___numWriteWaiters_5;
 		if ((!(((uint32_t)L_5) == ((uint32_t)1))))
 		{
 			goto IL_0023;
@@ -12447,7 +12881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_WaitOnEvent_mFF3B7C
 
 IL_0023:
 	{
-		uint32_t L_6 = __this->___numWriteUpgradeWaiters_4;
+		uint32_t L_6 = __this->___numWriteUpgradeWaiters_7;
 		if ((!(((uint32_t)L_6) == ((uint32_t)1))))
 		{
 			goto IL_0032;
@@ -12474,40 +12908,40 @@ FINALLY_004a:
 					uint32_t* L_8 = ___1_numWaiters;
 					int32_t L_9 = *((uint32_t*)L_8);
 					*((int32_t*)L_7) = (int32_t)((int32_t)il2cpp_codegen_subtract(L_9, 1));
-					uint32_t L_10 = __this->___numWriteWaiters_2;
+					uint32_t L_10 = __this->___numWriteWaiters_5;
 					if (L_10)
 					{
 						goto IL_007d;
 					}
 				}
 				{
-					uint32_t L_11 = __this->___numWriteUpgradeWaiters_4;
+					uint32_t L_11 = __this->___numWriteUpgradeWaiters_7;
 					if (L_11)
 					{
 						goto IL_007d;
 					}
 				}
 				{
-					uint32_t L_12 = __this->___numUpgradeWaiters_5;
+					uint32_t L_12 = __this->___numUpgradeWaiters_8;
 					if (L_12)
 					{
 						goto IL_007d;
 					}
 				}
 				{
-					uint32_t L_13 = __this->___numReadWaiters_3;
+					uint32_t L_13 = __this->___numReadWaiters_6;
 					if (L_13)
 					{
 						goto IL_007d;
 					}
 				}
 				{
-					__this->___fNoWaiters_6 = (bool)1;
+					__this->___fNoWaiters_9 = (bool)1;
 				}
 
 IL_007d:
 				{
-					uint32_t L_14 = __this->___numWriteWaiters_2;
+					uint32_t L_14 = __this->___numWriteWaiters_5;
 					if (L_14)
 					{
 						goto IL_008b;
@@ -12519,7 +12953,7 @@ IL_007d:
 
 IL_008b:
 				{
-					uint32_t L_15 = __this->___numWriteUpgradeWaiters_4;
+					uint32_t L_15 = __this->___numWriteUpgradeWaiters_7;
 					if (L_15)
 					{
 						goto IL_0099;
@@ -12587,7 +13021,7 @@ IL_00af:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitAndWakeUpAppropriateWaiters_m43EB7B2724EC44E2F0B4E3CA6A51752345978E90 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = __this->___fNoWaiters_6;
+		bool L_0 = __this->___fNoWaiters_9;
 		if (!L_0)
 		{
 			goto IL_000f;
@@ -12619,14 +13053,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitAndWakeUpApprop
 		}
 	}
 	{
-		uint32_t L_2 = __this->___numWriteUpgradeWaiters_4;
+		uint32_t L_2 = __this->___numWriteUpgradeWaiters_7;
 		if ((!(((uint32_t)L_2) > ((uint32_t)0))))
 		{
 			goto IL_0037;
 		}
 	}
 	{
-		bool L_3 = __this->___fUpgradeThreadHoldingRead_16;
+		bool L_3 = __this->___fUpgradeThreadHoldingRead_19;
 		if (!L_3)
 		{
 			goto IL_0037;
@@ -12641,7 +13075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitAndWakeUpApprop
 	}
 	{
 		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_5 = __this->___waitUpgradeEvent_12;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_5 = __this->___waitUpgradeEvent_15;
 		NullCheck(L_5);
 		bool L_6;
 		L_6 = EventWaitHandle_Set_mDF98D67F214714A9590DF82A1C51D3D851281E4D(L_5, NULL);
@@ -12657,7 +13091,7 @@ IL_0037:
 		}
 	}
 	{
-		uint32_t L_8 = __this->___numWriteUpgradeWaiters_4;
+		uint32_t L_8 = __this->___numWriteUpgradeWaiters_7;
 		if ((!(((uint32_t)L_8) > ((uint32_t)0))))
 		{
 			goto IL_0057;
@@ -12665,7 +13099,7 @@ IL_0037:
 	}
 	{
 		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_9 = __this->___waitUpgradeEvent_12;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_9 = __this->___waitUpgradeEvent_15;
 		NullCheck(L_9);
 		bool L_10;
 		L_10 = EventWaitHandle_Set_mDF98D67F214714A9590DF82A1C51D3D851281E4D(L_9, NULL);
@@ -12681,7 +13115,7 @@ IL_0057:
 		}
 	}
 	{
-		uint32_t L_12 = __this->___numWriteWaiters_2;
+		uint32_t L_12 = __this->___numWriteWaiters_5;
 		if ((!(((uint32_t)L_12) > ((uint32_t)0))))
 		{
 			goto IL_0076;
@@ -12689,7 +13123,7 @@ IL_0057:
 	}
 	{
 		ReaderWriterLockSlim_ExitMyLock_mA7506AF402F9AA6241ABA227DABFF68BB9D5FF7B(__this, NULL);
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_13 = __this->___writeEvent_9;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_13 = __this->___writeEvent_12;
 		NullCheck(L_13);
 		bool L_14;
 		L_14 = EventWaitHandle_Set_mDF98D67F214714A9590DF82A1C51D3D851281E4D(L_13, NULL);
@@ -12710,21 +13144,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ExitAndWakeUpApprop
 	int32_t G_B9_0 = 0;
 	int32_t G_B8_0 = 0;
 	{
-		uint32_t L_0 = __this->___numWriteWaiters_2;
+		uint32_t L_0 = __this->___numWriteWaiters_5;
 		if (L_0)
 		{
 			goto IL_0018;
 		}
 	}
 	{
-		uint32_t L_1 = __this->___numWriteUpgradeWaiters_4;
+		uint32_t L_1 = __this->___numWriteUpgradeWaiters_7;
 		if (L_1)
 		{
 			goto IL_0018;
 		}
 	}
 	{
-		bool L_2 = __this->___fNoWaiters_6;
+		bool L_2 = __this->___fNoWaiters_9;
 		if (!L_2)
 		{
 			goto IL_001f;
@@ -12739,16 +13173,16 @@ IL_0018:
 
 IL_001f:
 	{
-		uint32_t L_3 = __this->___numReadWaiters_3;
+		uint32_t L_3 = __this->___numReadWaiters_6;
 		V_0 = (bool)((!(((uint32_t)L_3) <= ((uint32_t)0)))? 1 : 0);
-		uint32_t L_4 = __this->___numUpgradeWaiters_5;
+		uint32_t L_4 = __this->___numUpgradeWaiters_8;
 		if (!L_4)
 		{
 			goto IL_003c;
 		}
 	}
 	{
-		int32_t L_5 = __this->___upgradeLockOwnerId_7;
+		int32_t L_5 = __this->___upgradeLockOwnerId_10;
 		G_B7_0 = ((((int32_t)L_5) == ((int32_t)(-1)))? 1 : 0);
 		goto IL_003d;
 	}
@@ -12770,7 +13204,7 @@ IL_003d:
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_7 = __this->___readEvent_10;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_7 = __this->___readEvent_13;
 		NullCheck(L_7);
 		bool L_8;
 		L_8 = EventWaitHandle_Set_mDF98D67F214714A9590DF82A1C51D3D851281E4D(L_7, NULL);
@@ -12785,7 +13219,7 @@ IL_0052:
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_9 = __this->___upgradeEvent_11;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_9 = __this->___upgradeEvent_14;
 		NullCheck(L_9);
 		bool L_10;
 		L_10 = EventWaitHandle_Set_mDF98D67F214714A9590DF82A1C51D3D851281E4D(L_9, NULL);
@@ -12800,7 +13234,7 @@ IL_0060:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_IsWriterAcquired_m6D1FB82F2349C4B48345C9EBEFFCC3FA69EF5A76 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___owners_17;
+		uint32_t L_0 = __this->___owners_21;
 		return (bool)((((int32_t)((int32_t)((int32_t)L_0&((int32_t)-1073741825)))) == ((int32_t)0))? 1 : 0);
 	}
 }
@@ -12808,8 +13242,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ReaderWriterLockSlim_IsWriterAcquired_m6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SetWriterAcquired_mE496DF38D30454011343EE638FAC1EF2B5E8319C (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)((int32_t)L_0|((int32_t)-2147483648LL)));
+		uint32_t L_0 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)((int32_t)L_0|((int32_t)-2147483648LL)));
 		return;
 	}
 }
@@ -12817,8 +13251,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SetWriterAcquired_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ClearWriterAcquired_mBCDFD72656A5D8EFCEE5A0AD39233D37E44461DC (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)((int32_t)L_0&((int32_t)2147483647LL)));
+		uint32_t L_0 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)((int32_t)L_0&((int32_t)2147483647LL)));
 		return;
 	}
 }
@@ -12826,8 +13260,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ClearWriterAcquired
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SetWritersWaiting_mEBE801FBDAFD33AF1B8E3CE71F0AD0C9CDA69902 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)((int32_t)L_0|((int32_t)1073741824)));
+		uint32_t L_0 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)((int32_t)L_0|((int32_t)1073741824)));
 		return;
 	}
 }
@@ -12835,8 +13269,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SetWritersWaiting_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ClearWritersWaiting_m7587122D0BAD6384DE3B38DB6BF7D38B364A4935 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)((int32_t)L_0&((int32_t)-1073741825)));
+		uint32_t L_0 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)((int32_t)L_0&((int32_t)-1073741825)));
 		return;
 	}
 }
@@ -12844,8 +13278,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ClearWritersWaiting
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SetUpgraderWaiting_m5C7C47EBCA531D201CA72CB27D0548F71375BCAC (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)((int32_t)L_0|((int32_t)536870912)));
+		uint32_t L_0 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)((int32_t)L_0|((int32_t)536870912)));
 		return;
 	}
 }
@@ -12853,8 +13287,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_SetUpgraderWaiting_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ClearUpgraderWaiting_m214E8B0780542079CB3D9D5C28C58C47A72E91E4 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___owners_17;
-		__this->___owners_17 = ((int32_t)((int32_t)L_0&((int32_t)-536870913)));
+		uint32_t L_0 = __this->___owners_21;
+		__this->___owners_21 = ((int32_t)((int32_t)L_0&((int32_t)-536870913)));
 		return;
 	}
 }
@@ -12862,7 +13296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_ClearUpgraderWaitin
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t ReaderWriterLockSlim_GetNumReaders_m300EBD28D2300167E37C0F67AD04AF7BE87C1DB1 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___owners_17;
+		uint32_t L_0 = __this->___owners_21;
 		return ((int32_t)((int32_t)L_0&((int32_t)268435455)));
 	}
 }
@@ -13051,7 +13485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReaderWriterLockSlim_Dispose_mA894FFFD08
 		}
 	}
 	{
-		bool L_1 = __this->___fDisposed_18;
+		bool L_1 = __this->___fDisposed_27;
 		if (L_1)
 		{
 			goto IL_00d3;
@@ -13130,71 +13564,71 @@ IL_0054:
 
 IL_0064:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_12 = __this->___writeEvent_9;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_12 = __this->___writeEvent_12;
 		if (!L_12)
 		{
 			goto IL_007e;
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_13 = __this->___writeEvent_9;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_13 = __this->___writeEvent_12;
 		NullCheck(L_13);
 		VirtualActionInvoker0::Invoke(12 /* System.Void System.Threading.WaitHandle::Close() */, L_13);
-		__this->___writeEvent_9 = (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___writeEvent_9), (void*)(EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL);
+		__this->___writeEvent_12 = (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___writeEvent_12), (void*)(EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL);
 	}
 
 IL_007e:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_14 = __this->___readEvent_10;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_14 = __this->___readEvent_13;
 		if (!L_14)
 		{
 			goto IL_0098;
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_15 = __this->___readEvent_10;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_15 = __this->___readEvent_13;
 		NullCheck(L_15);
 		VirtualActionInvoker0::Invoke(12 /* System.Void System.Threading.WaitHandle::Close() */, L_15);
-		__this->___readEvent_10 = (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___readEvent_10), (void*)(EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL);
+		__this->___readEvent_13 = (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___readEvent_13), (void*)(EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL);
 	}
 
 IL_0098:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_16 = __this->___upgradeEvent_11;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_16 = __this->___upgradeEvent_14;
 		if (!L_16)
 		{
 			goto IL_00b2;
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_17 = __this->___upgradeEvent_11;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_17 = __this->___upgradeEvent_14;
 		NullCheck(L_17);
 		VirtualActionInvoker0::Invoke(12 /* System.Void System.Threading.WaitHandle::Close() */, L_17);
-		__this->___upgradeEvent_11 = (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___upgradeEvent_11), (void*)(EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL);
+		__this->___upgradeEvent_14 = (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___upgradeEvent_14), (void*)(EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL);
 	}
 
 IL_00b2:
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_18 = __this->___waitUpgradeEvent_12;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_18 = __this->___waitUpgradeEvent_15;
 		if (!L_18)
 		{
 			goto IL_00cc;
 		}
 	}
 	{
-		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_19 = __this->___waitUpgradeEvent_12;
+		EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* L_19 = __this->___waitUpgradeEvent_15;
 		NullCheck(L_19);
 		VirtualActionInvoker0::Invoke(12 /* System.Void System.Threading.WaitHandle::Close() */, L_19);
-		__this->___waitUpgradeEvent_12 = (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___waitUpgradeEvent_12), (void*)(EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL);
+		__this->___waitUpgradeEvent_15 = (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___waitUpgradeEvent_15), (void*)(EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E*)NULL);
 	}
 
 IL_00cc:
 	{
-		__this->___fDisposed_18 = (bool)1;
+		__this->___fDisposed_27 = (bool)1;
 	}
 
 IL_00d3:
@@ -13334,7 +13768,7 @@ IL_001e:
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = Thread_get_ManagedThreadId_m74ACB74A574EE535C2B00B7D64F203A62E796B05(L_6, NULL);
-		int32_t L_8 = __this->___upgradeLockOwnerId_7;
+		int32_t L_8 = __this->___upgradeLockOwnerId_10;
 		if ((!(((uint32_t)L_7) == ((uint32_t)L_8))))
 		{
 			goto IL_0032;
@@ -13392,7 +13826,7 @@ IL_001e:
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = Thread_get_ManagedThreadId_m74ACB74A574EE535C2B00B7D64F203A62E796B05(L_6, NULL);
-		int32_t L_8 = __this->___writeLockOwnerId_8;
+		int32_t L_8 = __this->___writeLockOwnerId_11;
 		if ((!(((uint32_t)L_7) == ((uint32_t)L_8))))
 		{
 			goto IL_0032;
@@ -13411,7 +13845,7 @@ IL_0032:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReaderWriterLockSlim_get_WaitingReadCount_mD79E93CABC9BFBA4AB306193DDF8CE90F1818C92 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___numReadWaiters_3;
+		uint32_t L_0 = __this->___numReadWaiters_6;
 		return L_0;
 	}
 }
@@ -13419,7 +13853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReaderWriterLockSlim_get_WaitingReadC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReaderWriterLockSlim_get_WaitingUpgradeCount_m13892A21F7EF1D7ED202D186B2E7B2B6C400F388 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___numUpgradeWaiters_5;
+		uint32_t L_0 = __this->___numUpgradeWaiters_8;
 		return L_0;
 	}
 }
@@ -13427,7 +13861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReaderWriterLockSlim_get_WaitingUpgra
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReaderWriterLockSlim_get_WaitingWriteCount_m8FE677BDB0E776125691C0A4C1A74B5B8637D246 (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___numWriteWaiters_2;
+		uint32_t L_0 = __this->___numWriteWaiters_5;
 		return L_0;
 	}
 }
@@ -13788,7 +14222,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ReaderWriterCount_tD7361BF31DEB70
 	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* V_0 = NULL;
 	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* V_1 = NULL;
 	{
-		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_0 = ((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_15;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_0 = ((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_18;
 		V_0 = L_0;
 		V_1 = (ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333*)NULL;
 		goto IL_0031;
@@ -13799,7 +14233,7 @@ IL_000a:
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_1 = V_0;
 		NullCheck(L_1);
 		int64_t L_2 = L_1->___lockID_0;
-		int64_t L_3 = __this->___lockID_14;
+		int64_t L_3 = __this->___lockID_17;
 		if ((!(((uint64_t)L_2) == ((uint64_t)L_3))))
 		{
 			goto IL_001a;
@@ -13880,19 +14314,19 @@ IL_0039:
 		ReaderWriterCount__ctor_m8FE7B774A506545AF710639DB53F7677A2FA658A(L_15, NULL);
 		V_1 = L_15;
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_16 = V_1;
-		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_17 = ((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_15;
+		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_17 = ((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_18;
 		NullCheck(L_16);
 		L_16->___next_4 = L_17;
 		Il2CppCodeGenWriteBarrier((void**)(&L_16->___next_4), (void*)L_17);
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_18 = V_1;
-		((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_15 = L_18;
-		Il2CppCodeGenWriteBarrier((void**)(&((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_15), (void*)L_18);
+		((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_18 = L_18;
+		Il2CppCodeGenWriteBarrier((void**)(&((ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_il2cpp_TypeInfo_var))->___t_rwc_18), (void*)L_18);
 	}
 
 IL_0053:
 	{
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_19 = V_1;
-		int64_t L_20 = __this->___lockID_14;
+		int64_t L_20 = __this->___lockID_17;
 		NullCheck(L_19);
 		L_19->___lockID_0 = L_20;
 		ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* L_21 = V_1;
@@ -13902,21 +14336,21 @@ IL_0053:
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ReaderWriterLockSlim_get_WaitingReadCount_mD79E93CABC9BFBA4AB306193DDF8CE90F1818C92_inline (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___numReadWaiters_3;
+		uint32_t L_0 = __this->___numReadWaiters_6;
 		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ReaderWriterLockSlim_get_WaitingUpgradeCount_m13892A21F7EF1D7ED202D186B2E7B2B6C400F388_inline (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___numUpgradeWaiters_5;
+		uint32_t L_0 = __this->___numUpgradeWaiters_8;
 		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ReaderWriterLockSlim_get_WaitingWriteCount_m8FE677BDB0E776125691C0A4C1A74B5B8637D246_inline (ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906* __this, const RuntimeMethod* method) 
 {
 	{
-		uint32_t L_0 = __this->___numWriteWaiters_2;
+		uint32_t L_0 = __this->___numWriteWaiters_5;
 		return L_0;
 	}
 }

@@ -1540,35 +1540,35 @@ struct ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906  : public 
 	// System.Int32 System.Threading.ReaderWriterLockSlim::myLock
 	int32_t ___myLock_1;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::numWriteWaiters
-	uint32_t ___numWriteWaiters_2;
+	uint32_t ___numWriteWaiters_5;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::numReadWaiters
-	uint32_t ___numReadWaiters_3;
+	uint32_t ___numReadWaiters_6;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::numWriteUpgradeWaiters
-	uint32_t ___numWriteUpgradeWaiters_4;
+	uint32_t ___numWriteUpgradeWaiters_7;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::numUpgradeWaiters
-	uint32_t ___numUpgradeWaiters_5;
+	uint32_t ___numUpgradeWaiters_8;
 	// System.Boolean System.Threading.ReaderWriterLockSlim::fNoWaiters
-	bool ___fNoWaiters_6;
+	bool ___fNoWaiters_9;
 	// System.Int32 System.Threading.ReaderWriterLockSlim::upgradeLockOwnerId
-	int32_t ___upgradeLockOwnerId_7;
+	int32_t ___upgradeLockOwnerId_10;
 	// System.Int32 System.Threading.ReaderWriterLockSlim::writeLockOwnerId
-	int32_t ___writeLockOwnerId_8;
+	int32_t ___writeLockOwnerId_11;
 	// System.Threading.EventWaitHandle System.Threading.ReaderWriterLockSlim::writeEvent
-	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___writeEvent_9;
+	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___writeEvent_12;
 	// System.Threading.EventWaitHandle System.Threading.ReaderWriterLockSlim::readEvent
-	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___readEvent_10;
+	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___readEvent_13;
 	// System.Threading.EventWaitHandle System.Threading.ReaderWriterLockSlim::upgradeEvent
-	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___upgradeEvent_11;
+	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___upgradeEvent_14;
 	// System.Threading.EventWaitHandle System.Threading.ReaderWriterLockSlim::waitUpgradeEvent
-	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___waitUpgradeEvent_12;
+	EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* ___waitUpgradeEvent_15;
 	// System.Int64 System.Threading.ReaderWriterLockSlim::lockID
-	int64_t ___lockID_14;
+	int64_t ___lockID_17;
 	// System.Boolean System.Threading.ReaderWriterLockSlim::fUpgradeThreadHoldingRead
-	bool ___fUpgradeThreadHoldingRead_16;
+	bool ___fUpgradeThreadHoldingRead_19;
 	// System.UInt32 System.Threading.ReaderWriterLockSlim::owners
-	uint32_t ___owners_17;
+	uint32_t ___owners_21;
 	// System.Boolean System.Threading.ReaderWriterLockSlim::fDisposed
-	bool ___fDisposed_18;
+	bool ___fDisposed_27;
 };
 
 // System.Data.RecordManager
@@ -3692,14 +3692,14 @@ struct Operators_tF28485BC2B1176C9AFEA3F94F70F8843DFA953A3_StaticFields
 struct ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_StaticFields
 {
 	// System.Int64 System.Threading.ReaderWriterLockSlim::s_nextLockID
-	int64_t ___s_nextLockID_13;
+	int64_t ___s_nextLockID_16;
 };
 
 // System.Threading.ReaderWriterLockSlim
 struct ReaderWriterLockSlim_t3BF29C18C9FC0EE07209EDD54D938EA473FB3906_ThreadStaticFields
 {
 	// System.Threading.ReaderWriterCount System.Threading.ReaderWriterLockSlim::t_rwc
-	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* ___t_rwc_15;
+	ReaderWriterCount_tD7361BF31DEB70DC7319519D215F400357543333* ___t_rwc_18;
 };
 
 // System.Data.RecordManager

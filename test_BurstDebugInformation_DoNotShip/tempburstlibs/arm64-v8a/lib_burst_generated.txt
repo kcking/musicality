@@ -153,6 +153,8 @@ Library: /Users/marshallchadbourne/Desktop/Developer/MIT-2023/SUB/musicality/Tem
 --compilation-defines=MODULE_PARTICLE_SYSTEM_EXISTS
 --compilation-defines=UNITY_INPUT_SYSTEM
 --compilation-defines=XR_MGMT_GTE_320
+--compilation-defines=UNITY_XR_MANAGEMENT_320
+--compilation-defines=USING_PARTICLE_SYSTEM
 --compilation-defines=INCLUDE_PHYSICS_MODULE
 --compilation-defines=INCLUDE_UGUI
 --compilation-defines=INCLUDE_INPUT_SYSTEM
