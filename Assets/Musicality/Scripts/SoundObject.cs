@@ -15,16 +15,23 @@ namespace Foundry
 
         public bool isCollided;
         public Collision collisionRef;
+
+        public float delayBeforeSoundActive = 3.0f;
+        public float timeSpawned;
             
         double? triggerTime;
         double? lastSentTriggerTime;
         double? playedTime;
 
-
-        void Start()
+        void Awake()
         {
             gameManager = FindObjectOfType<GameManager>();
             audioSource = GetComponent<AudioSource>();
+        }
+
+        void Start()
+        {
+            timeSpawned = Time.time;
             if(GameManager.currentAvailableNotes != null)
                 noteValue = GameManager.currentAvailableNotes[Random.Range(0, GameManager.currentAvailableNotes.Count)];
             // If nothing is assigned to current available notes then 
@@ -56,6 +63,10 @@ namespace Foundry
         {
             //  Color change code (random color)
             // GetComponent<MeshRenderer>().material.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
+
+            if(Time.time - timeSpawned < delayBeforeSoundActive)
+                return;
+
             if (triggerTime != null)
             {
                 if (playedTime != triggerTime)
@@ -71,7 +82,6 @@ namespace Foundry
                         // AudioManager.instance.impactAudio.PlayImpactClip("G2", GetComponent<AudioSource>());
                         AudioManager.instance.impactAudio.PlayRandomImpactClip(audioSource);
                     }
-
                 }
             }
 
