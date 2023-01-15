@@ -14,7 +14,7 @@ namespace Foundry
          
         public string[] notes = { "Eb2", "E2", "F2", "Gb2", "G2", "Ab2", "A2", "Bb2", "B2", "C3", "Db3", "D3", "Eb3", "E3", "F3", "Gb3", "G3", "Ab3", "A3", "Bb3", "B3"};
 
-        public float maxImpact = 10f; // Maximum impact force
+        public float maxImpact = 2.00f; // Maximum impact force
 
         void Start()
         {   

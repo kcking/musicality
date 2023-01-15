@@ -46,6 +46,7 @@ namespace Foundry
         void OnCollisionEnter(Collision collision)
         {
             Debug.Log("CollisionEnter");
+            Debug.Log("MagnitudeOfCollision is " + collision.impulse.magnitude);
             if (isGrabbed)
             {
                 GameObject other = collision.gameObject;
