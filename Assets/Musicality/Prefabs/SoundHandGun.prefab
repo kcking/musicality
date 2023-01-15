@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: -692527143295022755}
   - component: {fileID: 7353034359951446683}
   - component: {fileID: 1391147322198286081}
+  - component: {fileID: -8016887561283868478}
   m_Layer: 10
   m_Name: SoundHandGun
   m_TagString: Untagged
@@ -473,7 +474,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   noteValue: 
+  id: 
   isCollided: 0
+  delayBeforeSoundActive: 3
+  timeSpawned: 0
 --- !u!114 &6171218075538847330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2286e28f5364e485085ee54070bf8488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundObject: {fileID: 0}
   currentNoteValue: 
   isGrabbed: 0
   positionNotes:
@@ -5427,6 +5432,18 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &-8016887561283868478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171218075538847345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2df66d9d42815e41b5d69c087cb6aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6171218075814828877
 GameObject:
   m_ObjectHideFlags: 0

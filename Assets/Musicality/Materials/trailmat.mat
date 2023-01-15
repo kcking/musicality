@@ -58,8 +58,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Color1: {r: 1, g: 0.872434, b: 0, a: 0}
-    - _Color2: {r: 0, g: 0.016808987, b: 1, a: 0}
+    - _Color1: {r: 1, g: 0, b: 0, a: 0}
+    - _Color2: {r: 0, g: 0.052033424, b: 1, a: 0}
     - _Scroll_speed: {r: 0.3, g: 0, b: 0, a: 0}
     - _noisespeed: {r: 0.5, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
